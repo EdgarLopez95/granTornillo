@@ -1,1 +1,246 @@
-/*# sourceMappingURL=styles.css.map */
+@charset "UTF-8";
+:root {
+  --negro: #393939;
+  /* Tipografía */
+  --tipo-principal: "Montserrat", sans-serif;
+  --tipo-secundaria: Verdana;
+}
+
+/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #ececec;
+  }
+}
+/* Opcional */
+/* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* Reseteamos los margin y paddings de todas las etiquetas */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* Evitamos problemas con las imagenes */
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* opcional */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* opcional */
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* ... excepto los que se encuentran en párrafos */
+p a {
+  display: inline;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* Configuramos anclas suaves */
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Evitamos problemas con los pseudoelementos de quotes */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* Configuramos el texto que seleccionamos */
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  /* opcional */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+/* Reseteamos las tablas */
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/* (Probándolo, no usar en producción) En el caso de añadir una  */
+/* p svg{
+    display: inline;
+    width: initial;
+  } */
+/* Configuramos la tipografía para toda la web */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  color: var(--negro);
+  /* opcional */
+  /* opcional */
+  -webkit-hyphens: auto;
+          hyphens: auto;
+  /* opcional */
+  font-smooth: always;
+  /* opcional */
+  -webkit-font-smoothing: antialiased;
+  /* opcional */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header .nav {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(250, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header .nav .logo a img {
+  width: 19rem;
+  transition: all 300ms;
+}
+.header .nav .logo a img:hover {
+  transform: scale(1.1);
+}
+.header .nav .menu {
+  color: #7a7a7a;
+  display: flex;
+  align-items: center;
+}
+.header .nav .menu ul a {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0 25px 0 0;
+  transition: all 300ms;
+}
+.header .nav .menu ul a:hover {
+  transform: scale(1.1);
+  color: #fab800;
+}
+.header .nav .botonLlamar a {
+  transition: all 300ms;
+}
+.header .nav .botonLlamar a .contact-button {
+  background-color: #fab800;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  height: 73px;
+  cursor: pointer;
+}
+.header .nav .botonLlamar a .contact-button .icon-container {
+  margin-right: 10px;
+  height: 100%;
+}
+.header .nav .botonLlamar a .contact-button .icon-container img {
+  vertical-align: middle;
+  height: 100%;
+}
+.header .nav .botonLlamar a .contact-button .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.header .nav .botonLlamar a .contact-button .text-container span {
+  font-weight: medium;
+  font-size: 12px;
+  margin-bottom: -5px;
+}
+.header .nav .botonLlamar a .contact-button .text-container strong {
+  font-weight: bolder;
+  font-size: 14px;
+  margin-top: -5px;
+}
+.header .nav .botonLlamar a:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=styles.css.map */
