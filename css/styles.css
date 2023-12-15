@@ -405,6 +405,7 @@ body {
 }
 .mainIndex .seccionTrees .seccionOne_div-derecho {
   background-image: url(https://raw.githubusercontent.com/EdgarLopez95/granTornillo/main/assets/imagenDerecha.jpg);
+  background-size: cover; /* Hace que la imagen cubra todo el contenedor */
   width: 50%;
   display: flex;
   align-items: center;
@@ -433,6 +434,7 @@ body {
   margin: 30px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
   gap: 30px;
 }
 .mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno .tres-botones .cuadro-uno {
@@ -451,4 +453,74 @@ body {
   font-weight: bold;
   text-align: center;
   padding: 10px 0;
+}
+.mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno .tres-botones button {
+  background-color: #fab800;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 20px 0;
+  transition: all 300ms;
+}
+.mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno .tres-botones button:hover {
+  transform: scale(1.1);
+}
+.mainIndex .seccionFour {
+  background-color: #fab800;
+  padding: 100px 100px;
+}
+.mainIndex .seccionFour img {
+  max-width: 50px;
+  margin: 0 auto;
+}
+.mainIndex .seccionFour h3 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #20384a;
+  padding: 30px;
+}
+.mainIndex .seccionFour .contenedor-logos {
+  max-width: 1200px;
+  height: 300px;
+  display: flex;
+  margin: 0 auto;
+}
+.mainIndex .seccionFive {
+  background-color: white;
+  padding: 100px 100px;
+}
+.mainIndex .seccionFive img {
+  max-width: 50px;
+  margin: 0 auto;
+}
+.mainIndex .seccionFive h3 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #20384a;
+  padding-top: 30px;
+}
+.mainIndex .seccionFive h4 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: normal;
+  color: #20384a;
+}
+.mainIndex .seccionFive .contenedor-logos {
+  max-width: 1200px;
+  height: 300px;
+  display: flex;
+  margin: 0 auto;
+}
+.mainIndex .seccionSix {
+  height: 670px;
+  background-image: url(./../../../assets/bannersContacto.jpg);
+  background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+  background-position: center; /* Alinea la imagen al centro del contenedor */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=styles.css.map */
