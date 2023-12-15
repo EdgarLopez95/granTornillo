@@ -2,6 +2,7 @@
   .seccionOne {
     height: 830px;
     background-image: url(https://raw.githubusercontent.com/EdgarLopez95/granTornillo/main/assets/bannerHome.jpg);
+
     background-size: cover; /* Hace que la imagen cubra todo el contenedor */
     background-position: center; /* Alinea la imagen al centro del contenedor */
     background-repeat: no-repeat; /* Evita la repetición de la imagen */
@@ -160,7 +161,7 @@
       }
     }
     .seccionOne_div-derecho {
-      background-image: url(../../../assets/imagenDerecha.jpg);
+      background-image: url(https://raw.githubusercontent.com/EdgarLopez95/granTornillo/main/assets/imagenDerecha.jpg);
       width: 50%;
       display: flex;
       align-items: center;

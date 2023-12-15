@@ -404,7 +404,7 @@ body {
   width: 30px;
 }
 .mainIndex .seccionTrees .seccionOne_div-derecho {
-  background-image: url(../../../assets/imagenDerecha.jpg);
+  background-image: url(https://raw.githubusercontent.com/EdgarLopez95/granTornillo/main/assets/imagenDerecha.jpg);
   width: 50%;
   display: flex;
   align-items: center;
