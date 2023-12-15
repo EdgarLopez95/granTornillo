@@ -173,7 +173,6 @@ body {
 .header .nav {
   width: 100%;
   height: 120px;
-  background-color: rgb(250, 255, 255);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -243,4 +242,148 @@ body {
 }
 .header .nav .botonLlamar a:hover {
   transform: scale(1.1);
+}
+
+.mainIndex .seccionOne {
+  height: 830px;
+  background-image: url(../../../assets/bannerHome.jpg);
+  background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+  background-position: center; /* Alinea la imagen al centro del contenedor */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainIndex .seccionOne .secctionOne__div {
+  width: 1200px;
+  margin: 0 auto;
+}
+.mainIndex .seccionOne .secctionOne__div p {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+.mainIndex .seccionOne .secctionOne__div h1 {
+  font-size: clamp(40px, 8vw, 90px);
+  font-weight: bold;
+}
+.mainIndex .seccionOne .secctionOne__div h1 .primerTexto {
+  color: white;
+}
+.mainIndex .seccionOne .secctionOne__div h1 .segundoTexto {
+  color: #fab800;
+}
+.mainIndex .seccionOne .secctionOne__div h2 {
+  max-width: 600px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
+}
+.mainIndex .seccionOne .secctionOne__div button {
+  background-color: #fab800;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 30px 45px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.mainIndex .seccionOne .secctionOne__div button:hover {
+  transform: scale(1.1);
+}
+.mainIndex .seccionTwo {
+  padding: 100px 100px;
+}
+.mainIndex .seccionTwo img {
+  max-width: 50px;
+  margin: 0 auto;
+}
+.mainIndex .seccionTwo h3 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #20384a;
+  padding: 30px;
+}
+.mainIndex .seccionTwo p {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  color: #707070;
+  -webkit-hyphens: none;
+          hyphens: none;
+}
+.mainIndex .seccionTwo .contenedorSeccion {
+  padding-top: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.mainIndex .seccionTwo .contenedorSeccion article {
+  border: 1px solid #b4a485;
+  width: 100%;
+  transition: all 300ms;
+  padding: 15px 0 0 0;
+}
+.mainIndex .seccionTwo .contenedorSeccion article .imagenBombillo {
+  max-width: 75px;
+  margin: 0 auto;
+}
+.mainIndex .seccionTwo .contenedorSeccion article .imagenTelefono {
+  max-width: 150px;
+  margin: 0 auto;
+  padding: 13px 0;
+}
+.mainIndex .seccionTwo .contenedorSeccion article .imagenTaladro {
+  max-width: 144px;
+  margin: 0 auto;
+  padding: 8px 0;
+}
+.mainIndex .seccionTwo .contenedorSeccion article h4 {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #20384a;
+  text-align: center;
+  margin: 0 auto;
+}
+.mainIndex .seccionTwo .contenedorSeccion article p {
+  width: 90%;
+}
+.mainIndex .seccionTwo .contenedorSeccion article button {
+  cursor: pointer;
+  margin-top: 30px;
+  display: flex;
+  border-top: 1px solid #b4a485;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 300ms;
+}
+.mainIndex .seccionTwo .contenedorSeccion article button .texto {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 30px;
+  padding: 20px 0;
+}
+.mainIndex .seccionTwo .contenedorSeccion article button .flecha {
+  margin-right: 30px;
+  width: 20px;
+}
+.mainIndex .seccionTwo .contenedorSeccion article button:hover {
+  background-color: #20384a;
+  color: white;
 }/*# sourceMappingURL=styles.css.map */
