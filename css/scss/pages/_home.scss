@@ -274,12 +274,86 @@
   }
   .seccionSix {
     height: 670px;
-    background-image: url(./../../../assets/bannersContacto.jpg);
+    background-image: url(https://raw.githubusercontent.com/EdgarLopez95/granTornillo/main/assets/bannersContacto.jpg);
     background-size: cover; /* Hace que la imagen cubra todo el contenedor */
     background-position: center; /* Alinea la imagen al centro del contenedor */
     background-repeat: no-repeat; /* Evita la repetición de la imagen */
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+
+    h3 {
+      text-align: center;
+      font-size: 50px;
+      font-weight: bold;
+      color: white;
+      max-width: 800px;
+      padding-top: 30px;
+      hyphens: none;
+      padding-bottom: 30px;
+    }
+    .botonLlamar {
+      a {
+        transition: all 300ms;
+        .contact-button {
+          background-color: $colorYellow;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 10px;
+          border: none;
+          display: flex;
+          align-items: center;
+          height: 73px;
+          cursor: pointer;
+          .icon-container {
+            margin-right: 10px;
+            height: 100%;
+            img {
+              vertical-align: middle;
+              height: 100%;
+            }
+          }
+          .text-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            span {
+              font-weight: medium;
+              font-size: 12px;
+              margin-bottom: -5px;
+            }
+
+            strong {
+              font-weight: bolder;
+              font-size: 14px;
+              margin-top: -5px;
+            }
+          }
+        }
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+footer {
+  background-color: $colorDarkBlue;
+  .contenedor-principal {
+    padding-top: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    height: 500px;
+    .izquierda {
+    }
+    .centro {
+    }
+    .derecha {
+    }
   }
 }
