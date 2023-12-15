@@ -10,6 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="./css/styles.css" />
 
     <title>Inicio</title>
@@ -73,7 +80,11 @@
         </div>
       </section>
       <section class="seccionTwo">
-        <img class="imagenEscabadora" src="./assets/iconoEscabadora.png" alt="" />
+        <img
+          class="imagenEscabadora"
+          src="./assets/iconoEscabadora.png"
+          alt=""
+        />
         <h3>Bienvenidos</h3>
         <p>
           Somos una empresa vallecaucana fundada en 1981. Especialistas en
@@ -84,7 +95,11 @@
         </p>
         <div class="contenedorSeccion">
           <article>
-            <img class="imagenBombillo" src="./assets/bombilloInicio.svg" alt="bombillo multimarcas" />
+            <img
+              class="imagenBombillo"
+              src="./assets/bombilloInicio.svg"
+              alt="bombillo multimarcas"
+            />
             <h4>Multimarcas</h4>
             <p>
               Somos una empresa con una gran variedad de partes y con capacidad
@@ -102,10 +117,15 @@
             </a>
           </article>
           <article>
-            <img class="imagenTelefono"  src="./assets/telefonoInicio.svg" alt="telefono atencion personalizada" />
+            <img
+              class="imagenTelefono"
+              src="./assets/telefonoInicio.svg"
+              alt="telefono atencion personalizada"
+            />
             <h4>Atención personalizada</h4>
             <p>
-              Nuestra ATENCIÓN  y acompañamiento a nuestros clientes, nos ha permitido crear relaciones duraderas basadas en la confianza
+              Nuestra ATENCIÓN y acompañamiento a nuestros clientes, nos ha
+              permitido crear relaciones duraderas basadas en la confianza
             </p>
             <a href="./pages/productos.html">
               <button>
@@ -119,10 +139,16 @@
             </a>
           </article>
           <article>
-            <img class="imagenTaladro"  src="./assets/taladroInicio.svg" alt="bombillo multimarcas" />
+            <img
+              class="imagenTaladro"
+              src="./assets/taladroInicio.svg"
+              alt="bombillo multimarcas"
+            />
             <h4>Taller</h4>
             <p>
-              Servicios a tu alcance... Prestamos nuestros servicios en nuestro taller o en las instalaciones de nuestros clientes ubicados en la ciudad de Cali.
+              Servicios a tu alcance... Prestamos nuestros servicios en nuestro
+              taller o en las instalaciones de nuestros clientes ubicados en la
+              ciudad de Cali.
             </p>
             <a href="./pages/productos.html">
               <button>
@@ -137,10 +163,106 @@
           </article>
         </div>
       </section>
-      <section class="seccionTree"></section>
+
+      <section class="seccionTrees">
+        <div class="seccionOne_div-izquierda">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="/assets/imagen slider 1.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/assets/imagen slide 2.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/assets/imagen slider 3.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="seccionOne_div-derecho">
+          <div class="contenedor_interno">
+            <img
+              class="imagenEscabadoraAmarilla"
+              src="./assets/iconoEscabadoraAmarillo.svg"
+              alt=""
+            />
+            <h3>Nuestros sectores</h3>
+            <p>
+              IMPORTADORA EL GRAN TORNILLO S.A.S ofrece al mercado productos y
+              servicios a los sectores construcción, agrícola, automotriz,
+              minero, silvicultor y portuario, entre otros.
+            </p>
+            <div class="tres-botones">
+              <div class="cuadro-uno">
+                <img src="./assets/tractorBoton.svg" alt="" />
+                <h4>Agricola</h4>
+              </div>
+              <div class="cuadro-uno">
+                <img src="./assets/escabadoraBoton.svg" alt="" />
+                <h4>Civil y construcción</h4>
+              </div>
+              <div class="boton">
+                <button>Productos</button>
+                <button>servicios</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="seccionFour"></section>
       <section class="seccionFive"></section>
       <section class="seccionSix"></section>
     </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

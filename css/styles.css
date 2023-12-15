@@ -386,4 +386,69 @@ body {
 .mainIndex .seccionTwo .contenedorSeccion article button:hover {
   background-color: #20384a;
   color: white;
+}
+.mainIndex .seccionTrees {
+  display: flex;
+}
+.mainIndex .seccionTrees .seccionOne_div-izquierda {
+  background-color: #b4a485;
+  width: 50%;
+}
+.mainIndex .seccionTrees .seccionOne_div-izquierda .carousel-control-prev-icon,
+.mainIndex .seccionTrees .seccionOne_div-izquierda .carousel-control-next-icon {
+  background-color: #20384a;
+  background-size: 100%, 100%;
+  border-radius: 10%;
+  padding: 0 10px;
+  height: 30px;
+  width: 30px;
+}
+.mainIndex .seccionTrees .seccionOne_div-derecho {
+  background-image: url(../../../assets/imagen\ derecha.jpg);
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno {
+  max-width: 490px;
+  margin-left: 110px;
+}
+.mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno .imagenEscabadoraAmarilla {
+  max-width: 50px;
+}
+.mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno h3 {
+  color: #fab800;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno p {
+  font-size: 16px;
+  font-weight: normal;
+  color: white;
+  -webkit-hyphens: none;
+          hyphens: none;
+}
+.mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno .tres-botones {
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno .tres-botones .cuadro-uno {
+  background-color: #20384a;
+  border: 1px solid #3a6883;
+  border-radius: 10px;
+}
+.mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno .tres-botones .cuadro-uno img {
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 50%;
+}
+.mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno .tres-botones .cuadro-uno h4 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
 }/*# sourceMappingURL=styles.css.map */
