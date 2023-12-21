@@ -253,79 +253,7 @@
       }
     }
   }
-  .seccionSix {
-    height: 670px;
-    background-image: url(https://raw.githubusercontent.com/EdgarLopez95/granTornillo/main/assets/bannersContacto.jpg);
-    background-size: cover; /* Hace que la imagen cubra todo el contenedor */
-    background-position: center; /* Alinea la imagen al centro del contenedor */
-    background-repeat: no-repeat; /* Evita la repetición de la imagen */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 
-    h3 {
-      text-align: center;
-      font-size: clamp(20px, 8vw, 50px);
-      font-weight: bold;
-      color: white;
-      max-width: 800px;
-      padding-top: 30px;
-      hyphens: none;
-      padding-bottom: 30px;
-      padding: 0 20px 20px 30px;
-    }
-  }
 }
 
-footer {
-  background-color: $colorDarkBlue;
-  padding: 0 20px;
-  padding-bottom: 30px;
-  .contenedor {
-    padding-top: 40px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    .izquierda {
-      img {
-        width: 60%;
-        padding-bottom: 20px;
-      }
-      a {
-        color: white;
-        text-decoration: underline;
-      }
-    }
-    .centro {
-      h2 {
-        color: white;
-        font-size: 25px;
-        font-weight: bold;
-        padding-bottom: 45px;
-      }
-      a {
-        color: #d1d1d1;
-        font-size: 16px;
-        font-weight: normal;
-        margin-bottom: 13px;
-      }
-    }
-    .derecha {
-      h2 {
-        color: white;
-        font-size: 25px;
-        font-weight: bold;
-        padding-bottom: 45px;
-      }
-      a {
-        color: #d1d1d1;
-        font-size: 16px;
-        font-weight: normal;
-        margin-bottom: 13px;
-      }
-    }
 
-  }
-}

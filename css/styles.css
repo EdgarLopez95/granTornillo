@@ -169,108 +169,73 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/*
-.header {
-  .nav {
-    width: 100%;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 4rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    .logo {
-      a {
-        img {
-          width: 19rem;
-          transition: all 300ms;
-          &:hover {
-            transform: scale(1.1);
-          }
-        }
-      }
-    }
-    .menu {
-      color: #7a7a7a;
-      display: flex;
-      align-items: center;
-      ul {
-        a {
-          font-size: 1.6rem;
-          font-weight: 500;
-          margin: 0 25px 0 0;
-          transition: all 300ms;
-          &:hover {
-            transform: scale(1.1);
-            color: $colorYellow;
-          }
-        }
-      }
-    }
-    .botonLlamar {
-      a {
-        transition: all 300ms;
-        .contact-button {
-          background-color: $colorYellow;
-          color: white;
-          padding: 10px 20px;
-          border-radius: 10px;
-          border: none;
-          display: flex;
-          align-items: center;
-          height: 73px;
-          cursor: pointer;
-          .icon-container {
-            margin-right: 10px;
-            height: 100%;
-            img {
-              vertical-align: middle;
-              height: 100%;
-            }
-          }
-          .text-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
-            span {
-              font-weight: medium;
-              font-size: 12px;
-              margin-bottom: -5px;
-            }
+.seccionSix {
+  height: 670px;
+  background-image: url(https://raw.githubusercontent.com/EdgarLopez95/granTornillo/main/assets/bannersContacto.jpg);
+  background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+  background-position: center; /* Alinea la imagen al centro del contenedor */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.seccionSix h3 {
+  text-align: center;
+  font-size: clamp(20px, 8vw, 50px);
+  font-weight: bold;
+  color: white;
+  max-width: 800px;
+  padding-top: 30px;
+  -webkit-hyphens: none;
+          hyphens: none;
+  padding-bottom: 30px;
+  padding: 0 20px 20px 30px;
+}
 
-            strong {
-              font-weight: bolder;
-              font-size: 14px;
-              margin-top: -5px;
-            }
-          }
-        }
-        &:hover {
-            transform: scale(1.1);
-
-          }
-      }
-    }
-  }
+footer {
+  background-color: #20384a;
+  padding: 0 20px;
+  padding-bottom: 30px;
 }
-*/
-.header .navbar .container .boton-editar span {
-  font-weight: medium;
-  font-size: 12px;
-  margin-bottom: -5px;
+footer .contenedor {
+  padding-top: 40px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
-.header .navbar .container .boton-editar strong {
-  font-weight: bolder;
-  font-size: 14px;
-  margin-top: -5px;
+footer .contenedor .izquierda img {
+  width: 60%;
+  padding-bottom: 20px;
 }
-.header .navbar .container .collapse .navbar-nav .nav-item .nav-link:hover {
+footer .contenedor .izquierda a {
+  color: white;
   text-decoration: underline;
-  text-decoration-color: #fab800;
-  text-underline-offset: 5px;
-  text-decoration-thickness: 3px;
+}
+footer .contenedor .centro h2 {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 45px;
+}
+footer .contenedor .centro a {
+  color: #d1d1d1;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 13px;
+}
+footer .contenedor .derecha h2 {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 45px;
+}
+footer .contenedor .derecha a {
+  color: #d1d1d1;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 13px;
 }
 
 .mainIndex .seccionOne {
@@ -513,74 +478,6 @@ body {
   font-size: 15px;
   color: #474747;
   font-weight: bold;
-}
-.mainIndex .seccionSix {
-  height: 670px;
-  background-image: url(https://raw.githubusercontent.com/EdgarLopez95/granTornillo/main/assets/bannersContacto.jpg);
-  background-size: cover; /* Hace que la imagen cubra todo el contenedor */
-  background-position: center; /* Alinea la imagen al centro del contenedor */
-  background-repeat: no-repeat; /* Evita la repetición de la imagen */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.mainIndex .seccionSix h3 {
-  text-align: center;
-  font-size: clamp(20px, 8vw, 50px);
-  font-weight: bold;
-  color: white;
-  max-width: 800px;
-  padding-top: 30px;
-  -webkit-hyphens: none;
-          hyphens: none;
-  padding-bottom: 30px;
-  padding: 0 20px 20px 30px;
-}
-
-footer {
-  background-color: #20384a;
-  padding: 0 20px;
-  padding-bottom: 30px;
-}
-footer .contenedor {
-  padding-top: 40px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-footer .contenedor .izquierda img {
-  width: 60%;
-  padding-bottom: 20px;
-}
-footer .contenedor .izquierda a {
-  color: white;
-  text-decoration: underline;
-}
-footer .contenedor .centro h2 {
-  color: white;
-  font-size: 25px;
-  font-weight: bold;
-  padding-bottom: 45px;
-}
-footer .contenedor .centro a {
-  color: #d1d1d1;
-  font-size: 16px;
-  font-weight: normal;
-  margin-bottom: 13px;
-}
-footer .contenedor .derecha h2 {
-  color: white;
-  font-size: 25px;
-  font-weight: bold;
-  padding-bottom: 45px;
-}
-footer .contenedor .derecha a {
-  color: #d1d1d1;
-  font-size: 16px;
-  font-weight: normal;
-  margin-bottom: 13px;
 }
 
 @media screen and (max-width: 1100px) {
