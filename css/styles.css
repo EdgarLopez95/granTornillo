@@ -527,7 +527,7 @@ body {
 }
 .mainIndex .seccionSix h3 {
   text-align: center;
-  font-size: clamp(30px, 8vw, 50px);
+  font-size: clamp(20px, 8vw, 50px);
   font-weight: bold;
   color: white;
   max-width: 800px;
@@ -603,9 +603,18 @@ footer .contenedor .derecha a {
   footer .contenedor .izquierda img {
     width: 40%;
   }
+  footer .contenedor .centro h2 {
+    padding-bottom: 20px;
+  }
+  footer .contenedor .derecha h2 {
+    padding-bottom: 20px;
+  }
 }
 @media screen and (max-width: 600px) {
   .mainIndex .seccionFour .contenedor-logos .logos {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .mainIndex .seccionSix h3 {
+    font-size: 25px;
   }
 }/*# sourceMappingURL=styles.css.map */
