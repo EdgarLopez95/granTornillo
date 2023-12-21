@@ -169,7 +169,102 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.seccionSix {
+.mainIndex .bannerNosotros {
+  height: 570px;
+  background-image: url(https://raw.githubusercontent.com/EdgarLopez95/granTornillo/main/assets/bannerNosotros.jpg);
+  background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+  background-position: center; /* Alinea la imagen al centro del contenedor */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mainIndex .bannerNosotros h3 {
+  text-align: center;
+  font-size: clamp(20px, 8vw, 50px);
+  font-weight: bold;
+  color: #fab800;
+  max-width: 800px;
+  margin-top: 100px;
+  -webkit-hyphens: none;
+          hyphens: none;
+  padding-bottom: 30px;
+  padding: 0 20px 20px 30px;
+}
+.mainIndex .bannerProdcutos {
+  height: 570px;
+  background-image: url(https://raw.githubusercontent.com/EdgarLopez95/granTornillo/main/assets/bannerProducto.jpg);
+  background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+  background-position: center; /* Alinea la imagen al centro del contenedor */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mainIndex .bannerProdcutos h3 {
+  text-align: center;
+  font-size: clamp(20px, 8vw, 50px);
+  font-weight: bold;
+  color: #fab800;
+  max-width: 800px;
+  margin-top: 100px;
+  -webkit-hyphens: none;
+          hyphens: none;
+  padding-bottom: 30px;
+  padding: 0 20px 20px 30px;
+}
+.mainIndex .bannerServicios {
+  height: 570px;
+  background-image: url(https://raw.githubusercontent.com/EdgarLopez95/granTornillo/main/assets/bannerServicio.jpg);
+  background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+  background-position: center; /* Alinea la imagen al centro del contenedor */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mainIndex .bannerServicios h3 {
+  text-align: center;
+  font-size: clamp(20px, 8vw, 50px);
+  font-weight: bold;
+  color: #fab800;
+  max-width: 800px;
+  margin-top: 100px;
+  -webkit-hyphens: none;
+          hyphens: none;
+  padding-bottom: 30px;
+  padding: 0 20px 20px 30px;
+}
+.mainIndex .bannerContacto {
+  height: 570px;
+  background-image: url(https://raw.githubusercontent.com/EdgarLopez95/granTornillo/main/assets/bannersContacto.jpg);
+  background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+  background-position: center; /* Alinea la imagen al centro del contenedor */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mainIndex .bannerContacto h3 {
+  text-align: center;
+  font-size: clamp(20px, 8vw, 50px);
+  font-weight: bold;
+  color: #fab800;
+  max-width: 800px;
+  margin-top: 100px;
+  -webkit-hyphens: none;
+          hyphens: none;
+  padding-bottom: 30px;
+  padding: 0 20px 20px 30px;
+}
+.mainIndex .secionUnoNosotros {
+  height: 400px;
+}
+.mainIndex .seccionSix {
   height: 670px;
   background-image: url(https://raw.githubusercontent.com/EdgarLopez95/granTornillo/main/assets/bannersContacto.jpg);
   background-size: cover; /* Hace que la imagen cubra todo el contenedor */
@@ -180,7 +275,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.seccionSix h3 {
+.mainIndex .seccionSix h3 {
   text-align: center;
   font-size: clamp(20px, 8vw, 50px);
   font-weight: bold;
