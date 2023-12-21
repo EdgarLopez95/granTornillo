@@ -7,6 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap"
       rel="stylesheet"
     />
@@ -23,48 +28,75 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <div class="logo">
-          <a href="./index.html"><img src="./assets/mainLogo.svg" alt="" /></a>
-        </div>
-        <div class="menu">
-          <ul>
-            <li><a href="./index.html">Inicio</a></li>
-          </ul>
-          <ul>
-            <li><a href="./pages/nosotros.html">Nosotros</a></li>
-          </ul>
-          <ul>
-            <li><a href="./pages/productos.html">Productos</a></li>
-          </ul>
-          <ul>
-            <li><a href="./pages/servicios.html">Servicios</a></li>
-          </ul>
-          <ul>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-          </ul>
-        </div>
-        <div class="botonLlamar">
-          <a
-            target="_blank"
-            href="https://api.whatsapp.com/send/?phone=573024329221&text&type=phone_number&app_absent=0"
-          >
-            <button class="contact-button">
-              <div class="icon-container">
-                <img src="./assets/Wap icono.svg" alt="WhatsApp Icon" />
-              </div>
-              <div class="text-container">
-                <span>Escríbenos</span> <br />
-                <strong>+57 318 4152 496</strong>
-              </div>
-            </button>
+      <nav
+        class="navbar navbar-expand-lg pt-3 pb-3 style="
+        background-color:
+        #ffffff;
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/mainLogo.svg" alt="Bootstrap" height="50" />
           </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Producto 1</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Prodcuto 2 action</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Producto 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+            <button
+              class="btn btn-outline-warning px-4 boton-editar"
+              type="button"
+            >
+              <i class="fa fa-whatsapp"></i> <span>Escríbenos</span> <br />
+              <strong>+57 318 4152 496</strong>
+            </button>
+          </div>
         </div>
       </nav>
     </header>
     <main class="mainIndex">
       <section class="seccionOne">
-        <div class="secctionOne__div">
+        <div class="secctionOne__div container">
           <p>Bienvenidos a Importadora el Gran Tornillo</p>
           <h1>
             <span class="primerTexto">Mas de 40 años</span> <br />
@@ -86,83 +118,88 @@
           alt=""
         />
         <h3>Bienvenidos</h3>
-        <p>
+        <p class="parrafo-bienvenidos">
           Somos una empresa vallecaucana fundada en 1981. Especialistas en
           proveer partes y prestar servicios de mantenimiento y reparación de
           maquinaria pesada y equipos. Ofrecemos partes en marcas originales y
           marcas homólogas con mejoras aplicadas permitiendo así tener ofertas
           con mayor relación de precio-beneficio
         </p>
-        <div class="contenedorSeccion">
-          <article>
-            <img
-              class="imagenBombillo"
-              src="./assets/bombilloInicio.svg"
-              alt="bombillo multimarcas"
-            />
-            <h4>Multimarcas</h4>
-            <p>
-              Somos una empresa con una gran variedad de partes y con capacidad
-              de atender TODAS LAS MARCAS en maquinaria pesada y equipos.
-            </p>
-            <a href="./pages/productos.html">
-              <button>
-                <div class="texto">
-                  <h5>Leer más</h5>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./assets/bombilloinicio.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Multimarcas</h5>
+                  <p class="card-text">
+                    Somos una empresa con una gran variedad de partes y con
+                    capacidad de atender TODAS LAS MARCAS en maquinaria pesada y
+                    equipos.
+                  </p>
                 </div>
-                <div class="flecha">
-                  <img src="./assets/flechaAzulInicio.svg" alt="flecha" />
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary btn-lg btn-block"
+                >
+                  Leer más <i class="fa fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./assets/telefonoinicio.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Atención personalizada</h5>
+                  <p class="card-text">
+                    Nuestra ATENCIÓN y acompañamiento a nuestros clientes, nos
+                    ha permitido crear relaciones duraderas basadas en la
+                    confianza.
+                  </p>
                 </div>
-              </button>
-            </a>
-          </article>
-          <article>
-            <img
-              class="imagenTelefono"
-              src="./assets/telefonoInicio.svg"
-              alt="telefono atencion personalizada"
-            />
-            <h4>Atención personalizada</h4>
-            <p>
-              Nuestra ATENCIÓN y acompañamiento a nuestros clientes, nos ha
-              permitido crear relaciones duraderas basadas en la confianza
-            </p>
-            <a href="./pages/productos.html">
-              <button>
-                <div class="texto">
-                  <h5>Leer más</h5>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary btn-lg btn-block"
+                >
+                  Leer más <i class="fa fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./assets/taladroinicio.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Taller</h5>
+                  <p class="card-text">
+                    Servicios a tu alcance... Prestamos nuestros servicios en
+                    nuestro taller o en las instalaciones de nuestros clientes
+                    ubicados en la ciudad de Cali.
+                  </p>
                 </div>
-                <div class="flecha">
-                  <img src="./assets/flechaAzulInicio.svg" alt="flecha" />
-                </div>
-              </button>
-            </a>
-          </article>
-          <article>
-            <img
-              class="imagenTaladro"
-              src="./assets/taladroInicio.svg"
-              alt="bombillo multimarcas"
-            />
-            <h4>Taller</h4>
-            <p>
-              Servicios a tu alcance... Prestamos nuestros servicios en nuestro
-              taller o en las instalaciones de nuestros clientes ubicados en la
-              ciudad de Cali.
-            </p>
-            <a href="./pages/productos.html">
-              <button>
-                <div class="texto">
-                  <h5>Leer más</h5>
-                </div>
-                <div class="flecha">
-                  <img src="./assets/flechaAzulInicio.svg" alt="flecha" />
-                </div>
-              </button>
-            </a>
-          </article>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary btn-lg btn-block"
+                >
+                  Leer más <i class="fa fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
       <section class="seccionTrees">
         <div class="seccionOne_div-izquierda">
           <div
@@ -226,13 +263,13 @@
               src="./assets/iconoEscabadoraAmarillo.svg"
               alt=""
             />
-            <h3>Nuestros sectores</h3>
+            <h3>Sectores</h3>
             <p>
               IMPORTADORA EL GRAN TORNILLO S.A.S ofrece al mercado productos y
               servicios a los sectores construcción, agrícola, automotriz,
               minero, silvicultor y portuario, entre otros.
             </p>
-            <div class="tres-botones">
+            <div class="sectores">
               <div class="cuadro-uno">
                 <img src="./assets/tractorBoton.svg" alt="" />
                 <h4>Agricola</h4>
@@ -241,12 +278,14 @@
                 <img src="./assets/escabadoraBoton.svg" alt="" />
                 <h4>civil y construcción</h4>
               </div>
-              <button>
-                <a href="./pages/productos.html">Productos</a>
-              </button>
-
-              <button>Servicios</button>
             </div>
+
+            <button type="button" class="btn btn-outline-warning">
+              Productos
+            </button>
+            <button type="button" class="btn btn-outline-warning">
+              Servicios
+            </button>
           </div>
         </div>
       </section>
@@ -256,11 +295,19 @@
           src="./assets/iconoEscabadora.png"
           alt=""
         />
-        <h3>
+        <h3 class="titulo-seecionCuatro">
           Marcas originales <br />
           y homologas
         </h3>
-        <div class="contenedor-logos"></div>
+        <div class="contenedor-logos container">
+          <div class="logos">
+            <img src="./assets/logoCliente (1).png" class="fa" alt="" />
+            <img src="./assets/logoCliente (2).png" class="fa" alt="" />
+            <img src="./assets/logoCliente (3).png" class="fa" alt="" />
+            <img src="./assets/logoCliente (4).png" class="fa" alt="" />
+            <img src="./assets/logoCliente (5).png" class="fa" alt="" />
+          </div>
+        </div>
       </section>
       <section class="seccionFive">
         <img
@@ -268,10 +315,59 @@
           src="./assets/iconoEscabadora.png"
           alt=""
         />
-        <h3>Testimonios</h3>
-        <h4>Opiniones de nuestros clientes</h4>
-        <div class="contenedor-logos"></div>
+        <h3 class="titulo">Testimonios</h3>
+        <h4 class="subti">Opiniones de nuestros clientes</h4>
+
+        <div class="contenedor">
+          <div class="container">
+            <div
+              id="carouselExampleSlidesOnly"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active testimonio">
+                  <img src="/assets/comilla.png" alt="" />
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation ullamcorper suscipit lobortis
+                    nisl ut aliquip ex ea commodo consequat.
+                  </p>
+                  <h3>Edgar Felipe</h3>
+                  <h4>Ingenio Manuelita</h4>
+                </div>
+                <div class="carousel-item testimonio">
+                  <img src="/assets/comilla.png" alt="" />
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation ullamcorper suscipit lobortis
+                    nisl ut aliquip ex ea commodo consequat.
+                  </p>
+                  <h3>Edgar Felipe</h3>
+                  <h4>Ingenio Manuelita</h4>
+                </div>
+                <div class="carousel-item testimonio">
+                  <img src="/assets/comilla.png" alt="" />
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation ullamcorper suscipit lobortis
+                    nisl ut aliquip ex ea commodo consequat.
+                  </p>
+                  <h3>Edgar Felipe</h3>
+                  <h4>Ingenio Manuelita</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
       <section class="seccionSix">
         <h3>contacta con un asesor y resolveremos todas tus dudas</h3>
         <div class="botonLlamar">
@@ -279,26 +375,65 @@
             target="_blank"
             href="https://api.whatsapp.com/send/?phone=573024329221&text&type=phone_number&app_absent=0"
           >
-            <button class="contact-button">
-              <div class="icon-container">
-                <img src="./assets/Wap icono.svg" alt="WhatsApp Icon" />
-              </div>
-              <div class="text-container">
-                <span>Escríbenos</span> <br />
-                <strong>+57 318 4152 496</strong>
-              </div>
+            <button
+              class="btn btn-outline-warning px-4 boton-editar"
+              type="button"
+            >
+              <i class="fa fa-whatsapp"></i> <span>Escríbenos</span> <br />
+              <strong>+57 318 4152 496</strong>
             </button>
           </a>
         </div>
       </section>
     </main>
+    <!-- Remove the container if you want to extend the Footer to full width. -->
     <footer>
-      <div class="contenedor-principal">
-        <div class="izquierda"></div>
-        <div class="centro"></div>
-        <div class="derecha"></div>
+      <div class="contenedor container">
+        <div class="izquierda">
+          <img src="./assets/logo en blanco.svg" alt="" />
+          <ul class="list-unstyled d-flex flex-row justify-content-start">
+            <li>
+              <a class="text-white px-2" href="#!">
+                <i class="fa fa-facebook-square fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white px-2" href="#!">
+                <i class="fa fa-whatsapp fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white ps-2" href="#!">
+                <i class="fa fa-instagram fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white ps-3" href="#!">
+                <i class="fa fa-linkedin fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+          <a href="#">Brochure</a>
+        </div>
+        <div class="centro">
+          <h2>Links</h2>
+
+          <a href=""><i class="fa fa-caret-right"></i> Inicio</a>
+          <a href=""><i class="fa fa-caret-right"></i> Nosotros</a>
+          <a href=""><i class="fa fa-caret-right"></i> Productos</a>
+          <a href=""><i class="fa fa-caret-right"></i> Sevicios</a>
+          <a href=""><i class="fa fa-caret-right"></i> Contacto</a>
+        </div>
+        <div class="derecha">
+          <h2>Contacto</h2>
+          <a href=""><i class="fa fa-caret-right"></i> Cra 5 # 24 - 45 / San Nicolás , Cali</a>
+          <a href=""><i class="fa fa-caret-right"></i> Cl. 36 #8a 56</a>
+          <a href=""><i class="fa fa-caret-right"></i> servicioalcliente@grantornillo.com.co</a>
+          <a href=""><i class="fa fa-caret-right"></i> (60) (2) 882 3114</a>
+        </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

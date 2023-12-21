@@ -1,3 +1,4 @@
+/*
 .header {
   .nav {
     width: 100%;
@@ -79,6 +80,43 @@
             transform: scale(1.1);
             
           }
+      }
+    }
+  }
+}
+*/
+
+
+.header {
+  .navbar {
+    .container {
+      .boton-editar {
+        span {
+          font-weight: medium;
+          font-size: 12px;
+          margin-bottom: -5px;
+        }
+
+        strong {
+          font-weight: bolder;
+          font-size: 14px;
+          margin-top: -5px;
+        }
+      }
+      .collapse {
+        .navbar-nav {
+          
+          .nav-item {
+            .nav-link {
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: $colorYellow;
+                text-underline-offset: 5px;
+                text-decoration-thickness: 3px;
+              }
+            }
+          }
+        }
       }
     }
   }

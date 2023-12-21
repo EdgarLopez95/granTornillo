@@ -1,0 +1,58 @@
+@media screen and (max-width: 1100px) {
+  .mainIndex {
+    .seccionTrees {
+      .seccionOne_div-derecho {
+        flex: 100%;
+        .contenedor_interno {
+          padding: 30px;
+          margin: 0 auto;
+          .imagenEscabadoraAmarilla {
+          }
+        }
+      }
+      .seccionOne_div-izquierda {
+        flex: 100%;
+      }
+    }
+    .seccionFour {
+      .contenedor-logos {
+        .logos {
+          .fa {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+   
+    footer{
+        .contenedor{
+            grid-template-columns: repeat(1, 1fr);
+            padding-top: 50px;
+         .izquierda{
+            img{
+                width: 40%;
+              }
+         }
+        }
+    }
+  }
+
+
+@media screen and (max-width: 600px) {
+    .mainIndex {
+
+      .seccionFour {
+        .contenedor-logos {
+            .logos {
+              grid-template-columns: repeat(3, 1fr);
+          
+          }
+        }
+      }
+    }
+   
+  }
+

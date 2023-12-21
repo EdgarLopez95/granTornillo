@@ -9,8 +9,6 @@
     justify-content: center;
     align-items: center;
     .secctionOne__div {
-      width: 1200px;
-      margin: 0 auto;
       p {
         margin-bottom: 30px;
         font-size: 20px;
@@ -55,103 +53,53 @@
     }
   }
   .seccionTwo {
-    padding: 100px 100px;
-    img {
+    padding: 50px 50px;
+    .imagenEscabadora {
       max-width: 50px;
       margin: 0 auto;
     }
     h3 {
       text-align: center;
-      font-size: 50px;
+      font-size: clamp(30px, 8vw, 50px);
       font-weight: bold;
       color: $colorDarkBlue;
-      padding: 30px;
     }
-    p {
+    .parrafo-bienvenidos {
       font-size: 16px;
       font-weight: normal;
       text-align: center;
-      width: 60%;
-      margin: 0 auto;
+      max-width: 900px;
+      margin: 30px auto;
       color: $colorParagraphs;
       hyphens: none;
     }
-    .contenedorSeccion {
-      padding-top: 40px;
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 30px;
-      article {
-        border: 1px solid #b4a485;
-        width: 100%;
-        transition: all 300ms;
-        padding: 15px 0 0 0;
-        .imagenBombillo {
-          max-width: 75px;
-          margin: 0 auto;
-        }
-        .imagenTelefono {
-          max-width: 150px;
-          margin: 0 auto;
-          padding: 13px 0;
-        }
-        .imagenTaladro {
-          max-width: 144px;
-          margin: 0 auto;
-          padding: 8px 0;
-        }
-        h4 {
-          padding-top: 10px;
-          padding-bottom: 20px;
-          font-size: 25px;
-          font-weight: bold;
-          color: $colorDarkBlue;
-          text-align: center;
-          margin: 0 auto;
-        }
-        p {
-          width: 90%;
-        }
-
-        button {
-          cursor: pointer;
-          margin-top: 30px;
-          display: flex;
-          border-top: 1px solid #b4a485;
-          width: 100%;
-          justify-content: space-between;
-          align-items: center;
-          transition: all 300ms;
-          .texto {
-            font-size: 20px;
-            font-weight: bold;
-            margin-left: 30px;
-            padding: 20px 0;
-          }
-          .flecha {
-            margin-right: 30px;
-            width: 20px;
-          }
-          &:hover {
-            background-color: $colorDarkBlue;
-            color: white;
-          }
-        }
+    .container {
+      .card-title {
+        color: $colorDarkBlue;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .card-text {
+        text-align: center;
+      }
+      .btn {
+        border-radius: 0;
+        border: 0;
+        border-top: 1px solid #b4a485;
       }
     }
   }
+
   .seccionTrees {
     display: flex;
+    flex-wrap: wrap;
 
     .seccionOne_div-izquierda {
-      background-color: #b4a485;
-      width: 50%;
+      flex: 50%;
       .carousel-control-prev-icon,
       .carousel-control-next-icon {
         background-color: $colorDarkBlue;
-
         background-size: 100%, 100%;
         border-radius: 10%;
         padding: 0 10px;
@@ -162,21 +110,21 @@
     .seccionOne_div-derecho {
       background-image: url(https://raw.githubusercontent.com/EdgarLopez95/granTornillo/main/assets/imagenDerecha.jpg);
       background-size: cover; /* Hace que la imagen cubra todo el contenedor */
-      width: 50%;
+
       display: flex;
+      flex: 50%;
       align-items: center;
 
       .contenedor_interno {
-        max-width: 490px;
-        margin-left: 110px;
+        margin: 40px 30px 40px 80px;
+        max-width: 580px;
         .imagenEscabadoraAmarilla {
           max-width: 50px;
         }
         h3 {
           color: $colorYellow;
-          font-size: 50px;
+          font-size: clamp(30px, 8vw, 50px);
           font-weight: bold;
-          margin: 20px 0;
         }
         p {
           font-size: 16px;
@@ -184,84 +132,84 @@
           color: white;
           hyphens: none;
         }
-        .tres-botones {
-          margin: 30px 0;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-template-rows: auto;
-          gap: 30px;
+        .sectores {
+          display: flex;
+          width: 300px;
+          gap: 10px;
           .cuadro-uno {
             background-color: #20384a;
             border: 1px solid #3a6883;
             border-radius: 10px;
+            margin-bottom: 20px;
             img {
-              padding-top: 20px;
+              padding-top: 15px;
 
               margin: 0 auto;
-              width: 50%;
+              width: 30%;
             }
             h4 {
               color: white;
-              font-size: 20px;
+              font-size: 15px;
               font-weight: bold;
               text-align: center;
-              padding: 10px 0;
-            }
-          }
-          button {
-            background-color: $colorYellow;
-            color: white;
-            font-size: 20px;
-            font-weight: bold;
-            border-radius: 10px;
-            padding: 20px 0;
-            transition: all 300ms;
-            &:hover {
-              transform: scale(1.1);
+              padding: 5px 0;
             }
           }
         }
       }
     }
   }
+
   .seccionFour {
     background-color: $colorYellow;
-    padding: 100px 100px;
-    img {
+    padding: 50px 0 100px 0;
+
+    .imagenEscabadora {
       max-width: 50px;
       margin: 0 auto;
     }
-    h3 {
+    .titulo-seecionCuatro {
       text-align: center;
-      font-size: 50px;
+      font-size: clamp(30px, 8vw, 50px);
       font-weight: bold;
       color: $colorDarkBlue;
-      padding: 30px;
+      padding-top: 30px;
+      padding-bottom: 60px;
+      hyphens: none;
     }
     .contenedor-logos {
-      max-width: 1200px;
-      height: 300px;
       display: flex;
-      margin: 0 auto;
+
+      .logos {
+        margin: 0 auto;
+        width: 100%;
+        display: grid;
+        gap: 1rem;
+        grid-auto-rows: auto;
+        grid-template-columns: repeat(5, 1fr);
+        .fa {
+          width: 100%;
+        }
+      }
     }
   }
   .seccionFive {
     background-color: white;
-    padding: 100px 100px;
-    img {
+    padding: 50px 0;
+    .imagenEscabadora {
       max-width: 50px;
       margin: 0 auto;
     }
-    h3 {
+    .titulo {
       text-align: center;
-      font-size: 50px;
+      font-size: clamp(30px, 8vw, 50px);
       font-weight: bold;
       color: $colorDarkBlue;
       padding-top: 30px;
     }
-    h4 {
+    .subti {
       text-align: center;
-      font-size: 30px;
+      font-size: clamp(10px, 6vw, 30px);
       font-weight: normal;
       color: $colorDarkBlue;
     }
@@ -270,6 +218,39 @@
       height: 300px;
       display: flex;
       margin: 0 auto;
+    }
+    .contenedor {
+      .container {
+        .testimonio {
+          padding-top: 50px;
+          img {
+            margin: 0 auto;
+            width: 87px;
+          }
+          p {
+            padding-top: 30px;
+            margin: 0 auto;
+            text-align: center;
+            color: $colorParagraphs;
+            max-width: 920px;
+          }
+          h3 {
+            padding-top: 30px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 30px;
+            color: #474747;
+            font-weight: bold;
+          }
+          h4 {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 15px;
+            color: #474747;
+            font-weight: bold;
+          }
+        }
+      }
     }
   }
   .seccionSix {
@@ -285,75 +266,66 @@
 
     h3 {
       text-align: center;
-      font-size: 50px;
+      font-size: clamp(30px, 8vw, 50px);
       font-weight: bold;
       color: white;
       max-width: 800px;
       padding-top: 30px;
       hyphens: none;
       padding-bottom: 30px;
-    }
-    .botonLlamar {
-      a {
-        transition: all 300ms;
-        .contact-button {
-          background-color: $colorYellow;
-          color: white;
-          padding: 10px 20px;
-          border-radius: 10px;
-          border: none;
-          display: flex;
-          align-items: center;
-          height: 73px;
-          cursor: pointer;
-          .icon-container {
-            margin-right: 10px;
-            height: 100%;
-            img {
-              vertical-align: middle;
-              height: 100%;
-            }
-          }
-          .text-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
-            span {
-              font-weight: medium;
-              font-size: 12px;
-              margin-bottom: -5px;
-            }
-
-            strong {
-              font-weight: bolder;
-              font-size: 14px;
-              margin-top: -5px;
-            }
-          }
-        }
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
+      padding: 0 20px 20px 30px;
     }
   }
 }
+
 footer {
   background-color: $colorDarkBlue;
-  .contenedor-principal {
+  padding: 0 20px;
+  padding-bottom: 30px;
+  .contenedor {
     padding-top: 40px;
-    max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    height: 500px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
     .izquierda {
+      img {
+        width: 60%;
+        padding-bottom: 20px;
+      }
+      a {
+        color: white;
+        text-decoration: underline;
+      }
     }
     .centro {
+      h2 {
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        padding-bottom: 45px;
+      }
+      a {
+        color: #d1d1d1;
+        font-size: 16px;
+        font-weight: normal;
+        margin-bottom: 13px;
+      }
     }
     .derecha {
+      h2 {
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        padding-bottom: 45px;
+      }
+      a {
+        color: #d1d1d1;
+        font-size: 16px;
+        font-weight: normal;
+        margin-bottom: 13px;
+      }
     }
+
   }
 }
