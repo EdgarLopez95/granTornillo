@@ -392,7 +392,7 @@ footer .contenedor .derecha a {
   width: 100%;
 }
 .mainIndex .seccionTresNosotros {
-  padding: 70px 50px 0 50px;
+  padding: 70px 50px 80px 50px;
 }
 .mainIndex .seccionTresNosotros .contenedor {
   display: flex;
@@ -409,6 +409,27 @@ footer .contenedor .derecha a {
 }
 .mainIndex .seccionTresNosotros .contenedor .derecha img {
   width: 60%;
+}
+.mainIndex .seccionCuatroNosotros {
+  height: 570px;
+  background-image: url(https://raw.githubusercontent.com/EdgarLopez95/granTornillo/main/assets/bannerFondo.png);
+  background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+  background-position: center; /* Alinea la imagen al centro del contenedor */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+}
+.mainIndex .seccionCincoNosotros {
+  padding: 70px 50px 0 50px;
+  height: 500px;
+}
+.mainIndex .seccionCincoNosotros .imagenEscabadora {
+  max-width: 50px;
+  margin: 0 auto;
+}
+.mainIndex .seccionCincoNosotros h3 {
+  text-align: center;
+  font-size: clamp(30px, 8vw, 50px);
+  font-weight: bold;
+  color: #20384a;
 }
 
 .mainIndex .seccionOne {
