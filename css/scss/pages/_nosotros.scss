@@ -1,0 +1,83 @@
+.mainIndex {
+  .seccionUnoNosotros {
+    padding: 70px 50px 0 50px;
+    .imagenEscabadora {
+      max-width: 50px;
+      margin: 0 auto;
+    }
+    h3 {
+      text-align: center;
+      font-size: clamp(30px, 8vw, 50px);
+      font-weight: bold;
+      color: $colorDarkBlue;
+    }
+    .contenedor {
+      display: flex;
+      width: 100%;
+      gap: 50px;
+      align-items: center;
+      margin-top: 50px;
+      .izquierda {
+        width: 100%;
+      }
+      .derecha {
+        width: 100%;
+      }
+    }
+  }
+  .seccionDosNosotros {
+    padding: 70px 50px 0 50px;
+
+    .contenedor {
+      display: flex;
+      width: 100%;
+      gap: 50px;
+      align-items: center;
+      .izquierda {
+          width: 100%;
+          .subtitulo{
+            font-size: 25px;
+            font-weight: bold;
+            color: $colorDarkBlue;
+          }
+          .texto {
+            display: flex;
+          i {
+            padding-right: 10px;
+          }
+          p {
+            hyphens: none;
+            
+          }
+        }
+        .parrafoFinal{
+            hyphens: none;
+
+        }
+      }
+      .derecha {
+        width: 100%;
+      }
+    }
+  }
+  .seccionTresNosotros {
+    padding: 70px 50px 0 50px;
+   
+    .contenedor {
+      display: flex;
+      width: 100%;
+      gap: 50px;
+      align-items: center;
+      margin-top: 50px;
+      .izquierda {
+        width: 100%;
+      }
+      .derecha {
+        width: 100%;
+        img{
+            width: 60%;
+        }
+      }
+    }
+  }
+}

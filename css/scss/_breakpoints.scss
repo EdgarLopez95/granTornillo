@@ -4,7 +4,7 @@
       .seccionOne_div-derecho {
         flex: 100%;
         .contenedor_interno {
-          padding: 30px;
+          padding: 30px 10px;
           margin: 0 auto;
           .imagenEscabadoraAmarilla {
           }
@@ -25,6 +25,32 @@
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .mainIndex {
+    .seccionUnoNosotros {
+      padding: 50px 10px;
+      .contenedor {
+        flex-wrap: wrap;
+  
+      }
+    }
+    .seccionDosNosotros {
+      padding: 50px 10px;
+      .contenedor {
+        flex-wrap:wrap-reverse;
+  
+      }
+    }
+    .seccionTresNosotros {
+      padding: 50px 10px;
+      .contenedor {
+        flex-wrap: wrap;
+  
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   footer {
     .contenedor {
@@ -36,13 +62,13 @@
         }
       }
       .centro {
-        h2{
-            padding-bottom: 20px;
+        h2 {
+          padding-bottom: 20px;
         }
       }
       .derecha {
-        h2{
-            padding-bottom: 20px;
+        h2 {
+          padding-bottom: 20px;
         }
       }
     }
@@ -61,6 +87,51 @@
     .seccionSix {
       h3 {
         font-size: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    .container {
+      a {
+        img {
+          height: 40px;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+  .mainIndex {
+    .seccionOne {
+      .secctionOne__div {
+        button {
+          padding: 15px 25px;
+        }
+      }
+    }
+    .seccionTwo {
+      padding: 50px 10px;
+    }
+    .seccionTrees {
+      .seccionOne_div-derecho {
+        .contenedor_interno {
+          padding: 30px 10px;
+          .sectores {
+            width: 250px;
+            .cuadro-uno {
+              h4{
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .seccionSix {
+      h3{
+        
       }
     }
   }

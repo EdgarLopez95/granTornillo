@@ -281,11 +281,9 @@ body {
   font-weight: bold;
   color: white;
   max-width: 800px;
-  padding-top: 30px;
+  padding: 30px 10px 30px 10px;
   -webkit-hyphens: none;
           hyphens: none;
-  padding-bottom: 30px;
-  padding: 0 20px 20px 30px;
 }
 
 footer {
@@ -331,6 +329,86 @@ footer .contenedor .derecha a {
   font-size: 16px;
   font-weight: normal;
   margin-bottom: 13px;
+}
+
+.mainIndex .seccionUnoNosotros {
+  padding: 70px 50px 0 50px;
+}
+.mainIndex .seccionUnoNosotros .imagenEscabadora {
+  max-width: 50px;
+  margin: 0 auto;
+}
+.mainIndex .seccionUnoNosotros h3 {
+  text-align: center;
+  font-size: clamp(30px, 8vw, 50px);
+  font-weight: bold;
+  color: #20384a;
+}
+.mainIndex .seccionUnoNosotros .contenedor {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+  align-items: center;
+  margin-top: 50px;
+}
+.mainIndex .seccionUnoNosotros .contenedor .izquierda {
+  width: 100%;
+}
+.mainIndex .seccionUnoNosotros .contenedor .derecha {
+  width: 100%;
+}
+.mainIndex .seccionDosNosotros {
+  padding: 70px 50px 0 50px;
+}
+.mainIndex .seccionDosNosotros .contenedor {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+  align-items: center;
+}
+.mainIndex .seccionDosNosotros .contenedor .izquierda {
+  width: 100%;
+}
+.mainIndex .seccionDosNosotros .contenedor .izquierda .subtitulo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #20384a;
+}
+.mainIndex .seccionDosNosotros .contenedor .izquierda .texto {
+  display: flex;
+}
+.mainIndex .seccionDosNosotros .contenedor .izquierda .texto i {
+  padding-right: 10px;
+}
+.mainIndex .seccionDosNosotros .contenedor .izquierda .texto p {
+  -webkit-hyphens: none;
+          hyphens: none;
+}
+.mainIndex .seccionDosNosotros .contenedor .izquierda .parrafoFinal {
+  -webkit-hyphens: none;
+          hyphens: none;
+}
+.mainIndex .seccionDosNosotros .contenedor .derecha {
+  width: 100%;
+}
+.mainIndex .seccionTresNosotros {
+  padding: 70px 50px 0 50px;
+}
+.mainIndex .seccionTresNosotros .contenedor {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+  align-items: center;
+  margin-top: 50px;
+}
+.mainIndex .seccionTresNosotros .contenedor .izquierda {
+  width: 100%;
+}
+.mainIndex .seccionTresNosotros .contenedor .derecha {
+  width: 100%;
+}
+.mainIndex .seccionTresNosotros .contenedor .derecha img {
+  width: 60%;
 }
 
 .mainIndex .seccionOne {
@@ -580,11 +658,31 @@ footer .contenedor .derecha a {
     flex: 100%;
   }
   .mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno {
-    padding: 30px;
+    padding: 30px 10px;
     margin: 0 auto;
   }
   .mainIndex .seccionTrees .seccionOne_div-izquierda {
     flex: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mainIndex .seccionUnoNosotros {
+    padding: 50px 10px;
+  }
+  .mainIndex .seccionUnoNosotros .contenedor {
+    flex-wrap: wrap;
+  }
+  .mainIndex .seccionDosNosotros {
+    padding: 50px 10px;
+  }
+  .mainIndex .seccionDosNosotros .contenedor {
+    flex-wrap: wrap-reverse;
+  }
+  .mainIndex .seccionTresNosotros {
+    padding: 50px 10px;
+  }
+  .mainIndex .seccionTresNosotros .contenedor {
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 768px) {
@@ -608,5 +706,26 @@ footer .contenedor .derecha a {
   }
   .mainIndex .seccionSix h3 {
     font-size: 25px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .header .container a img {
+    height: 40px;
+    padding-top: 10px;
+  }
+  .mainIndex .seccionOne .secctionOne__div button {
+    padding: 15px 25px;
+  }
+  .mainIndex .seccionTwo {
+    padding: 50px 10px;
+  }
+  .mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno {
+    padding: 30px 10px;
+  }
+  .mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno .sectores {
+    width: 250px;
+  }
+  .mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno .sectores .cuadro-uno h4 {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=styles.css.map */
