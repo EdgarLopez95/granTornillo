@@ -383,6 +383,7 @@ footer .contenedor .derecha a {
 .mainIndex .seccionDosNosotros .contenedor .izquierda .texto p {
   -webkit-hyphens: none;
           hyphens: none;
+  color: #707070;
 }
 .mainIndex .seccionDosNosotros .contenedor .izquierda .parrafoFinal {
   -webkit-hyphens: none;
