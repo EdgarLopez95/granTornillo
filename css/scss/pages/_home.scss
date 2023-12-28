@@ -82,6 +82,8 @@
       }
       .card-text {
         text-align: center;
+        hyphens: none;
+
       }
       .btn {
         border-radius: 0;
@@ -90,7 +92,6 @@
       }
     }
   }
-
   .seccionTrees {
     display: flex;
     flex-wrap: wrap;
@@ -120,6 +121,7 @@
         max-width: 580px;
         .imagenEscabadoraAmarilla {
           max-width: 50px;
+          padding-bottom: 15px;
         }
         h3 {
           color: $colorYellow;
@@ -132,34 +134,34 @@
           color: white;
           hyphens: none;
         }
-        .sectores {
-          display: flex;
-          width: 300px;
+        .card-group {
+          padding-bottom: 20px;
           gap: 10px;
-          .cuadro-uno {
+          width: 60%;
+          .card {
             background-color: #20384a;
             border: 1px solid #3a6883;
             border-radius: 10px;
-            margin-bottom: 20px;
             img {
               padding-top: 15px;
-
               margin: 0 auto;
-              width: 30%;
+              width: 25%;
             }
-            h4 {
+            h5 {
               color: white;
               font-size: 15px;
               font-weight: bold;
               text-align: center;
               padding: 5px 0;
             }
+            .card-body{
+              padding: 5px;
+            }
           }
         }
       }
     }
   }
-
   .seccionFour {
     background-color: $colorYellow;
     padding: 50px 0 100px 0;
@@ -253,7 +255,4 @@
       }
     }
   }
-
 }
-
-

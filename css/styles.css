@@ -515,6 +515,8 @@ footer .contenedor .derecha a {
 }
 .mainIndex .seccionTwo .container .card-text {
   text-align: center;
+  -webkit-hyphens: none;
+          hyphens: none;
 }
 .mainIndex .seccionTwo .container .btn {
   border-radius: 0;
@@ -550,6 +552,7 @@ footer .contenedor .derecha a {
 }
 .mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno .imagenEscabadoraAmarilla {
   max-width: 50px;
+  padding-bottom: 15px;
 }
 .mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno h3 {
   color: #fab800;
@@ -563,28 +566,30 @@ footer .contenedor .derecha a {
   -webkit-hyphens: none;
           hyphens: none;
 }
-.mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno .sectores {
-  display: flex;
-  width: 300px;
+.mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno .card-group {
+  padding-bottom: 20px;
   gap: 10px;
+  width: 60%;
 }
-.mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno .sectores .cuadro-uno {
+.mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno .card-group .card {
   background-color: #20384a;
   border: 1px solid #3a6883;
   border-radius: 10px;
-  margin-bottom: 20px;
 }
-.mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno .sectores .cuadro-uno img {
+.mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno .card-group .card img {
   padding-top: 15px;
   margin: 0 auto;
-  width: 30%;
+  width: 25%;
 }
-.mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno .sectores .cuadro-uno h4 {
+.mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno .card-group .card h5 {
   color: white;
   font-size: 15px;
   font-weight: bold;
   text-align: center;
   padding: 5px 0;
+}
+.mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno .card-group .card .card-body {
+  padding: 5px;
 }
 .mainIndex .seccionFour {
   background-color: #fab800;
@@ -731,10 +736,6 @@ footer .contenedor .derecha a {
   }
 }
 @media screen and (max-width: 425px) {
-  .header .container a img {
-    height: 40px;
-    padding-top: 10px;
-  }
   .mainIndex .seccionOne .secctionOne__div button {
     padding: 15px 25px;
   }
