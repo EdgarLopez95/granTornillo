@@ -51,24 +51,25 @@
 @media screen and (max-width: 1000px) {
   .mainIndex {
     .seccionUnoNosotros {
-      padding: 50px 10px;
+      padding: 30px 10px;
       .contenedor {
         flex-wrap: wrap;
       }
     }
     .seccionDosNosotros {
-      padding: 50px 10px;
+      padding: 30px 10px;
       .contenedor {
         flex-wrap: wrap-reverse;
       }
     }
     .seccionTresNosotros {
-      padding: 50px 10px;
+      padding: 30px 10px;
       .contenedor {
         flex-wrap: wrap;
       }
     }
     .seccionCuatroNosotros {
+      padding-top: 120px;
       margin-bottom: 120px;
       .container {
         .informacion_cuadro {

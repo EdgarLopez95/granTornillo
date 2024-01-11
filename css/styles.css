@@ -391,6 +391,7 @@ footer .contenedor .derecha a {
 .mainIndex .seccionDosNosotros .contenedor .izquierda .parrafoFinal {
   -webkit-hyphens: none;
           hyphens: none;
+  color: #707070;
 }
 .mainIndex .seccionDosNosotros .contenedor .derecha {
   width: 100%;
@@ -831,24 +832,25 @@ footer .contenedor .derecha a {
 }
 @media screen and (max-width: 1000px) {
   .mainIndex .seccionUnoNosotros {
-    padding: 50px 10px;
+    padding: 30px 10px;
   }
   .mainIndex .seccionUnoNosotros .contenedor {
     flex-wrap: wrap;
   }
   .mainIndex .seccionDosNosotros {
-    padding: 50px 10px;
+    padding: 30px 10px;
   }
   .mainIndex .seccionDosNosotros .contenedor {
     flex-wrap: wrap-reverse;
   }
   .mainIndex .seccionTresNosotros {
-    padding: 50px 10px;
+    padding: 30px 10px;
   }
   .mainIndex .seccionTresNosotros .contenedor {
     flex-wrap: wrap;
   }
   .mainIndex .seccionCuatroNosotros {
+    padding-top: 120px;
     margin-bottom: 120px;
   }
   .mainIndex .seccionCuatroNosotros .container .informacion_cuadro {
