@@ -83,6 +83,9 @@
       }
       .derecha {
         width: 100%;
+        p {
+          color: $colorParagraphs;
+        }
         img {
           width: 60%;
         }

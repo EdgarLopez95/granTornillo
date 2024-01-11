@@ -418,6 +418,9 @@ footer .contenedor .derecha a {
 .mainIndex .seccionTresNosotros .contenedor .derecha {
   width: 100%;
 }
+.mainIndex .seccionTresNosotros .contenedor .derecha p {
+  color: #707070;
+}
 .mainIndex .seccionTresNosotros .contenedor .derecha img {
   width: 60%;
 }
