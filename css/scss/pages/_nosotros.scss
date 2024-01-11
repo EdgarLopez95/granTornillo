@@ -225,17 +225,54 @@
     }
   }
   .seccionCincoNosotros {
-    padding: 70px 50px 0 50px;
-    height: 500px;
+    padding: 70px 50px 70px 50px;
     .imagenEscabadora {
       max-width: 50px;
       margin: 0 auto;
     }
-    h3 {
+    .titulo {
       text-align: center;
       font-size: clamp(30px, 8vw, 50px);
       font-weight: bold;
       color: $colorDarkBlue;
+      margin-bottom: 100px;
+    }
+    .container {
+      .col {
+ 
+        .card {
+          box-shadow: -20px -20px 0px 0px rgba(32,56,74,1);
+          padding: 20px;
+          display: flex; 
+          flex-direction: row;
+          border-radius: 0;
+          .icono {
+            flex: 15%;
+            margin-right: 10px;
+            .card-img-top {
+              margin: 0 auto;
+            }
+          }
+          .card-body {
+            flex: 85%;
+            padding: 0;
+            .card-title {
+              font-size: 25px;
+              font-weight: bold;
+              hyphens: none;
+              color: $colorDarkBlue;
+              .list{
+                list-style: none;
+                padding-left: 1px !important;
+              }
+            }
+            .card-text {
+              hyphens: none;
+              color: $colorParagraphs;
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -543,18 +543,52 @@ footer .contenedor .derecha a {
   font-size: 16px;
 }
 .mainIndex .seccionCincoNosotros {
-  padding: 70px 50px 0 50px;
-  height: 500px;
+  padding: 70px 50px 70px 50px;
 }
 .mainIndex .seccionCincoNosotros .imagenEscabadora {
   max-width: 50px;
   margin: 0 auto;
 }
-.mainIndex .seccionCincoNosotros h3 {
+.mainIndex .seccionCincoNosotros .titulo {
   text-align: center;
   font-size: clamp(30px, 8vw, 50px);
   font-weight: bold;
   color: #20384a;
+  margin-bottom: 100px;
+}
+.mainIndex .seccionCincoNosotros .container .col .card {
+  box-shadow: -20px -20px 0px 0px rgb(32, 56, 74);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0;
+}
+.mainIndex .seccionCincoNosotros .container .col .card .icono {
+  flex: 15%;
+  margin-right: 10px;
+}
+.mainIndex .seccionCincoNosotros .container .col .card .icono .card-img-top {
+  margin: 0 auto;
+}
+.mainIndex .seccionCincoNosotros .container .col .card .card-body {
+  flex: 85%;
+  padding: 0;
+}
+.mainIndex .seccionCincoNosotros .container .col .card .card-body .card-title {
+  font-size: 25px;
+  font-weight: bold;
+  -webkit-hyphens: none;
+          hyphens: none;
+  color: #20384a;
+}
+.mainIndex .seccionCincoNosotros .container .col .card .card-body .card-title .list {
+  list-style: none;
+  padding-left: 1px !important;
+}
+.mainIndex .seccionCincoNosotros .container .col .card .card-body .card-text {
+  -webkit-hyphens: none;
+          hyphens: none;
+  color: #707070;
 }
 
 .mainIndex .seccionOne {
@@ -855,6 +889,9 @@ footer .contenedor .derecha a {
   }
   .mainIndex .seccionCuatroNosotros .container .informacion_cuadro {
     margin-bottom: -30%;
+  }
+  .mainIndex .seccionCincoNosotros {
+    padding: 30px 10px;
   }
 }
 @media screen and (max-width: 768px) {
