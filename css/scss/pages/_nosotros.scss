@@ -22,6 +22,9 @@
       }
       .derecha {
         width: 100%;
+        p {
+          color: $colorParagraphs;
+        }
       }
     }
   }
@@ -34,36 +37,37 @@
       gap: 50px;
       align-items: center;
       .izquierda {
-          width: 100%;
-          .subtitulo{
-            font-size: 25px;
-            font-weight: bold;
-            color: $colorDarkBlue;
-          }
-          .texto {
-            display: flex;
+        width: 100%;
+        .subtitulo {
+          font-size: 25px;
+          font-weight: bold;
+          color: $colorDarkBlue;
+        }
+        .texto {
+          display: flex;
           i {
             padding-right: 10px;
           }
           p {
             hyphens: none;
             color: $colorParagraphs;
-            
           }
         }
-        .parrafoFinal{
-            hyphens: none;
-
+        .parrafoFinal {
+          hyphens: none;
         }
       }
       .derecha {
         width: 100%;
+        p {
+          color: $colorParagraphs;
+        }
       }
     }
   }
   .seccionTresNosotros {
     padding: 70px 50px 80px 50px;
-   
+
     .contenedor {
       display: flex;
       width: 100%;
@@ -72,21 +76,152 @@
       margin-top: 50px;
       .izquierda {
         width: 100%;
+        p {
+          color: $colorParagraphs;
+        }
       }
       .derecha {
         width: 100%;
-        img{
-            width: 60%;
+        img {
+          width: 60%;
         }
       }
     }
   }
   .seccionCuatroNosotros {
-    height: 570px;
     background-image: url(https://raw.githubusercontent.com/EdgarLopez95/granTornillo/main/assets/bannerFondo.png);
     background-size: cover; /* Hace que la imagen cubra todo el contenedor */
     background-position: center; /* Alinea la imagen al centro del contenedor */
     background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    margin-bottom: 150px;
+    .container {
+      padding: 70px 20px 80px 0px;
+
+      .col {
+        // margin-bottom: 150px;
+        .card {
+          border-radius: 0;
+          .card-img-top {
+            width: 172px;
+            margin: 0 auto;
+            padding-top: 30px;
+          }
+          .card-body {
+            padding: 0;
+            .card-text {
+              padding: 16px;
+              hyphens: none;
+              text-align: center;
+              color: $colorParagraphs;
+            }
+          }
+          .card-button {
+            background: $colorYellow;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            transition: all 300ms;
+
+            img {
+              margin-right: 10px;
+              width: 44px;
+            }
+            .button-text {
+              color: white;
+              font-weight: bold;
+            }
+            &:hover {
+              background: $colorDarkBlue;
+            }
+          }
+        }
+      }
+      .informacion_cuadro {
+        margin-top: 100px;
+        background-color: white;
+        margin-bottom: -17%;
+        display: flex;
+        border: 1px solid #b4a485;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-around;
+
+        .izquierda {
+          display: flex;
+          align-items: center;
+          .imagen {
+            align-items: center;
+            img {
+              width: 66px;
+              margin-right: 25px;
+            }
+          }
+
+          .text {
+            .texto-grande {
+              color: $colorDarkBlue;
+              font-weight: bold;
+              font-size: clamp(20px, 8vw, 40px);
+              margin-bottom: 0;
+            }
+            .texto-pequeño {
+              color: $colorParagraphs;
+              font-size: 16px;
+            }
+          }
+        }
+        .centro {
+          display: flex;
+          align-items: center;
+          .imagen {
+            align-items: center;
+            img {
+              width: 66px;
+              margin-right: 25px;
+            }
+          }
+
+          .text {
+            .texto-grande {
+              color: $colorDarkBlue;
+              font-weight: bold;
+              font-size: clamp(20px, 8vw, 40px);
+              margin-bottom: 0;
+            }
+            .texto-pequeño {
+              color: $colorParagraphs;
+              font-size: 16px;
+            }
+          }
+        }
+        .derecha {
+          display: flex;
+          align-items: center;
+          .imagen {
+            align-items: center;
+            img {
+              width: 66px;
+              margin-right: 25px;
+            }
+          }
+
+          .text {
+            .texto-grande {
+              color: $colorDarkBlue;
+              font-weight: bold;
+              font-size: clamp(20px, 8vw, 40px);
+              margin-bottom: 0;
+            }
+            .texto-pequeño {
+              color: $colorParagraphs;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
   }
   .seccionCincoNosotros {
     padding: 70px 50px 0 50px;
@@ -94,7 +229,6 @@
     .imagenEscabadora {
       max-width: 50px;
       margin: 0 auto;
-
     }
     h3 {
       text-align: center;
@@ -102,6 +236,5 @@
       font-weight: bold;
       color: $colorDarkBlue;
     }
-
   }
 }

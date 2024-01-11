@@ -1,3 +1,16 @@
+@media screen and (max-width: 1400px) {
+  .mainIndex {
+    .seccionCuatroNosotros {
+      margin-bottom: 100px;
+      .container {
+        .informacion_cuadro {
+
+        }
+
+      }
+    }
+  }
+}
 @media screen and (max-width: 1100px) {
   .mainIndex {
     .seccionTrees {
@@ -12,6 +25,16 @@
       }
       .seccionOne_div-izquierda {
         flex: 100%;
+      }
+    }
+    .seccionCuatroNosotros {
+      margin-bottom: 90px;
+      .container {
+        padding: 30px 10px;
+        .informacion_cuadro {
+          margin-bottom: -20%;
+        }
+
       }
     }
     .seccionFour {
@@ -31,21 +54,27 @@
       padding: 50px 10px;
       .contenedor {
         flex-wrap: wrap;
-  
       }
     }
     .seccionDosNosotros {
       padding: 50px 10px;
       .contenedor {
-        flex-wrap:wrap-reverse;
-  
+        flex-wrap: wrap-reverse;
       }
     }
     .seccionTresNosotros {
       padding: 50px 10px;
       .contenedor {
         flex-wrap: wrap;
-  
+      }
+    }
+    .seccionCuatroNosotros {
+      margin-bottom: 120px;
+      .container {
+        .informacion_cuadro {
+          margin-bottom: -30%;
+        }
+
       }
     }
   }
@@ -94,8 +123,7 @@
 
 @media screen and (max-width: 425px) {
   .header {
-    .navbar{
-     
+    .navbar {
     }
   }
   .mainIndex {
@@ -116,7 +144,7 @@
           .sectores {
             width: 250px;
             .cuadro-uno {
-              h4{
+              h4 {
                 font-size: 12px;
               }
             }
@@ -125,8 +153,7 @@
       }
     }
     .seccionSix {
-      h3{
-        
+      h3 {
       }
     }
   }

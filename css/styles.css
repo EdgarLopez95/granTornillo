@@ -357,6 +357,9 @@ footer .contenedor .derecha a {
 .mainIndex .seccionUnoNosotros .contenedor .derecha {
   width: 100%;
 }
+.mainIndex .seccionUnoNosotros .contenedor .derecha p {
+  color: #707070;
+}
 .mainIndex .seccionDosNosotros {
   padding: 70px 50px 0 50px;
 }
@@ -392,6 +395,9 @@ footer .contenedor .derecha a {
 .mainIndex .seccionDosNosotros .contenedor .derecha {
   width: 100%;
 }
+.mainIndex .seccionDosNosotros .contenedor .derecha p {
+  color: #707070;
+}
 .mainIndex .seccionTresNosotros {
   padding: 70px 50px 80px 50px;
 }
@@ -405,6 +411,9 @@ footer .contenedor .derecha a {
 .mainIndex .seccionTresNosotros .contenedor .izquierda {
   width: 100%;
 }
+.mainIndex .seccionTresNosotros .contenedor .izquierda p {
+  color: #707070;
+}
 .mainIndex .seccionTresNosotros .contenedor .derecha {
   width: 100%;
 }
@@ -412,11 +421,125 @@ footer .contenedor .derecha a {
   width: 60%;
 }
 .mainIndex .seccionCuatroNosotros {
-  height: 570px;
   background-image: url(https://raw.githubusercontent.com/EdgarLopez95/granTornillo/main/assets/bannerFondo.png);
   background-size: cover; /* Hace que la imagen cubra todo el contenedor */
   background-position: center; /* Alinea la imagen al centro del contenedor */
   background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  margin-bottom: 150px;
+}
+.mainIndex .seccionCuatroNosotros .container {
+  padding: 70px 20px 80px 0px;
+}
+.mainIndex .seccionCuatroNosotros .container .col .card {
+  border-radius: 0;
+}
+.mainIndex .seccionCuatroNosotros .container .col .card .card-img-top {
+  width: 172px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.mainIndex .seccionCuatroNosotros .container .col .card .card-body {
+  padding: 0;
+}
+.mainIndex .seccionCuatroNosotros .container .col .card .card-body .card-text {
+  padding: 16px;
+  -webkit-hyphens: none;
+          hyphens: none;
+  text-align: center;
+  color: #707070;
+}
+.mainIndex .seccionCuatroNosotros .container .col .card .card-button {
+  background: #fab800;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  transition: all 300ms;
+}
+.mainIndex .seccionCuatroNosotros .container .col .card .card-button img {
+  margin-right: 10px;
+  width: 44px;
+}
+.mainIndex .seccionCuatroNosotros .container .col .card .card-button .button-text {
+  color: white;
+  font-weight: bold;
+}
+.mainIndex .seccionCuatroNosotros .container .col .card .card-button:hover {
+  background: #20384a;
+}
+.mainIndex .seccionCuatroNosotros .container .informacion_cuadro {
+  margin-top: 100px;
+  background-color: white;
+  margin-bottom: -17%;
+  display: flex;
+  border: 1px solid #b4a485;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+.mainIndex .seccionCuatroNosotros .container .informacion_cuadro .izquierda {
+  display: flex;
+  align-items: center;
+}
+.mainIndex .seccionCuatroNosotros .container .informacion_cuadro .izquierda .imagen {
+  align-items: center;
+}
+.mainIndex .seccionCuatroNosotros .container .informacion_cuadro .izquierda .imagen img {
+  width: 66px;
+  margin-right: 25px;
+}
+.mainIndex .seccionCuatroNosotros .container .informacion_cuadro .izquierda .text .texto-grande {
+  color: #20384a;
+  font-weight: bold;
+  font-size: clamp(20px, 8vw, 40px);
+  margin-bottom: 0;
+}
+.mainIndex .seccionCuatroNosotros .container .informacion_cuadro .izquierda .text .texto-pequeño {
+  color: #707070;
+  font-size: 16px;
+}
+.mainIndex .seccionCuatroNosotros .container .informacion_cuadro .centro {
+  display: flex;
+  align-items: center;
+}
+.mainIndex .seccionCuatroNosotros .container .informacion_cuadro .centro .imagen {
+  align-items: center;
+}
+.mainIndex .seccionCuatroNosotros .container .informacion_cuadro .centro .imagen img {
+  width: 66px;
+  margin-right: 25px;
+}
+.mainIndex .seccionCuatroNosotros .container .informacion_cuadro .centro .text .texto-grande {
+  color: #20384a;
+  font-weight: bold;
+  font-size: clamp(20px, 8vw, 40px);
+  margin-bottom: 0;
+}
+.mainIndex .seccionCuatroNosotros .container .informacion_cuadro .centro .text .texto-pequeño {
+  color: #707070;
+  font-size: 16px;
+}
+.mainIndex .seccionCuatroNosotros .container .informacion_cuadro .derecha {
+  display: flex;
+  align-items: center;
+}
+.mainIndex .seccionCuatroNosotros .container .informacion_cuadro .derecha .imagen {
+  align-items: center;
+}
+.mainIndex .seccionCuatroNosotros .container .informacion_cuadro .derecha .imagen img {
+  width: 66px;
+  margin-right: 25px;
+}
+.mainIndex .seccionCuatroNosotros .container .informacion_cuadro .derecha .text .texto-grande {
+  color: #20384a;
+  font-weight: bold;
+  font-size: clamp(20px, 8vw, 40px);
+  margin-bottom: 0;
+}
+.mainIndex .seccionCuatroNosotros .container .informacion_cuadro .derecha .text .texto-pequeño {
+  color: #707070;
+  font-size: 16px;
 }
 .mainIndex .seccionCincoNosotros {
   padding: 70px 50px 0 50px;
@@ -680,6 +803,11 @@ footer .contenedor .derecha a {
   font-weight: bold;
 }
 
+@media screen and (max-width: 1400px) {
+  .mainIndex .seccionCuatroNosotros {
+    margin-bottom: 100px;
+  }
+}
 @media screen and (max-width: 1100px) {
   .mainIndex .seccionTrees .seccionOne_div-derecho {
     flex: 100%;
@@ -690,6 +818,15 @@ footer .contenedor .derecha a {
   }
   .mainIndex .seccionTrees .seccionOne_div-izquierda {
     flex: 100%;
+  }
+  .mainIndex .seccionCuatroNosotros {
+    margin-bottom: 90px;
+  }
+  .mainIndex .seccionCuatroNosotros .container {
+    padding: 30px 10px;
+  }
+  .mainIndex .seccionCuatroNosotros .container .informacion_cuadro {
+    margin-bottom: -20%;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -710,6 +847,12 @@ footer .contenedor .derecha a {
   }
   .mainIndex .seccionTresNosotros .contenedor {
     flex-wrap: wrap;
+  }
+  .mainIndex .seccionCuatroNosotros {
+    margin-bottom: 120px;
+  }
+  .mainIndex .seccionCuatroNosotros .container .informacion_cuadro {
+    margin-bottom: -30%;
   }
 }
 @media screen and (max-width: 768px) {
