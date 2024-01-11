@@ -926,6 +926,9 @@ footer .contenedor .derecha a {
   .mainIndex .seccionDosNosotros .contenedor {
     flex-wrap: wrap-reverse;
   }
+  .mainIndex .secionDosContacto {
+    padding: 30px 10px;
+  }
   .mainIndex .seccionTresNosotros {
     padding: 30px 10px;
   }
