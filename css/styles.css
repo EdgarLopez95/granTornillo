@@ -594,6 +594,47 @@ footer .contenedor .derecha a {
   color: #707070;
 }
 
+.mainIndex .secionUnoContacto {
+  padding: 70px 50px 70px 50px;
+  display: flex;
+  width: 100%;
+  gap: 50px;
+  align-items: center;
+}
+.mainIndex .secionUnoContacto .imagenEscabadora {
+  max-width: 50px;
+}
+.mainIndex .secionUnoContacto .titulo {
+  -webkit-hyphens: none;
+          hyphens: none;
+  font-size: clamp(30px, 8vw, 50px);
+  font-weight: bold;
+  color: #20384a;
+}
+.mainIndex .secionUnoContacto .izquierda {
+  width: 100%;
+}
+.mainIndex .secionUnoContacto .izquierda .info-parrafo {
+  color: #20384a;
+  font-size: 17px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+.mainIndex .secionUnoContacto .derecha {
+  width: 100%;
+}
+.mainIndex .secionUnoContacto .derecha .btn {
+  color: white;
+}
+.mainIndex .secionDosContacto {
+  padding: 70px 50px 70px 50px;
+  width: 100%;
+  background-color: #fab800;
+}
+.mainIndex .secionDosContacto button {
+  color: #20384a;
+  font-weight: bold;
+}
 .mainIndex .seccionOne {
   height: 830px;
   background-image: url(https://raw.githubusercontent.com/EdgarLopez95/granTornillo/main/assets/bannerHome.jpg);
@@ -869,9 +910,14 @@ footer .contenedor .derecha a {
 }
 @media screen and (max-width: 1000px) {
   .mainIndex .seccionUnoNosotros {
+    gap: 20px;
     padding: 30px 10px;
   }
   .mainIndex .seccionUnoNosotros .contenedor {
+    flex-wrap: wrap;
+  }
+  .mainIndex .secionUnoContacto {
+    padding: 30px 10px;
     flex-wrap: wrap;
   }
   .mainIndex .seccionDosNosotros {

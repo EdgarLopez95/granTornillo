@@ -1,0 +1,52 @@
+.mainIndex {
+  .secionUnoContacto {
+    padding: 70px 50px 70px 50px;
+    display: flex;
+    width: 100%;
+
+    gap: 50px;
+    align-items: center;
+    .imagenEscabadora {
+      max-width: 50px;
+
+    }
+    .titulo {
+      hyphens: none;
+      font-size: clamp(30px, 8vw, 50px);
+      font-weight: bold;
+      color: $colorDarkBlue;
+    }
+    .izquierda {
+      width: 100%;
+      //height: 200px;
+      //background-color: aqua;
+      .info-parrafo{
+        color: $colorDarkBlue;
+        font-size: 17px;
+        margin: 0;
+        padding-bottom: 10px;
+        
+      }
+    }
+    .derecha {
+      width: 100%;
+      .btn{
+        color: white;
+      }
+      
+    }
+  }
+  .secionDosContacto {
+    padding: 70px 50px 70px 50px;
+    
+    width: 100%;
+   
+    background-color: $colorYellow;
+    button{
+        color: $colorDarkBlue;
+        font-weight: bold;
+    }
+  }
+  .secionTresContacto {
+  }
+}

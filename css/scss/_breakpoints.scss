@@ -4,9 +4,7 @@
       margin-bottom: 100px;
       .container {
         .informacion_cuadro {
-
         }
-
       }
     }
   }
@@ -34,7 +32,6 @@
         .informacion_cuadro {
           margin-bottom: -20%;
         }
-
       }
     }
     .seccionFour {
@@ -51,10 +48,15 @@
 @media screen and (max-width: 1000px) {
   .mainIndex {
     .seccionUnoNosotros {
+      gap: 20px;
       padding: 30px 10px;
       .contenedor {
         flex-wrap: wrap;
       }
+    }
+    .secionUnoContacto {
+      padding: 30px 10px;
+      flex-wrap: wrap;
     }
     .seccionDosNosotros {
       padding: 30px 10px;
@@ -75,7 +77,6 @@
         .informacion_cuadro {
           margin-bottom: -30%;
         }
-
       }
     }
     .seccionCincoNosotros {

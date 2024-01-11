@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
@@ -109,26 +113,173 @@
       <div class="bannerContacto">
         <h3>Contacto</h3>
       </div>
-      <div class="secionUnoNosotros">
-
-      </div>
-      <section class="seccionSix">
-        <h3>contacta con un asesor y resolveremos todas tus dudas</h3>
-        <div class="botonLlamar">
-          <a
-            target="_blank"
-            href="https://api.whatsapp.com/send/?phone=573024329221&text&type=phone_number&app_absent=0"
-          >
-            <button
-              class="btn btn-outline-warning px-4 boton-editar"
-              type="button"
-            >
-              <i class="fa fa-whatsapp"></i> <span>Escríbenos</span> <br />
-              <strong>+57 318 4152 496</strong>
-            </button>
-          </a>
+      <div class="secionUnoContacto container">
+        <div class="izquierda">
+          <img
+            class="imagenEscabadora pb-3"
+            src="../assets/iconoEscabadora.png"
+            alt=""
+          />
+          <h2 class="titulo">
+            Contacta con <br />
+            nosotros
+          </h2>
+          <div class="infor-contacto">
+            <p class="info-parrafo">
+              <i
+                class="bi-house-fill pe-2"
+                style="font-size: 1.5rem; color: #20384a"
+              ></i
+              >Cra 5 # 24 - 45 / San Nicolás , Cali
+            </p>
+            <p class="info-parrafo">
+              <i
+                class="bi-gear-fill pe-2"
+                style="font-size: 1.5rem; color: #20384a"
+              ></i
+              >Cl. 36 #8a 56
+            </p>
+            <p class="info-parrafo">
+              <i
+                class="bi-house-fill pe-2"
+                style="font-size: 1.5rem; color: #20384a"
+              ></i
+              >servicioalcliente@grantornillo.com.co
+            </p>
+            <p class="info-parrafo">
+              <i
+                class="bi-house-fill pe-2"
+                style="font-size: 1.5rem; color: #20384a"
+              ></i
+              >(60) (2) 882 3114
+            </p>
+          </div>
         </div>
-      </section>
+        <div class="derecha">
+          <form>
+            <div class="row form-group">
+              <div class="col-6">
+                <input
+                  type="text"
+                  class="form-control p-lg-3"
+                  placeholder="Nombre"
+                />
+              </div>
+              <div class="col-6">
+                <input
+                  type="email"
+                  class="form-control p-lg-3"
+                  placeholder="Correo"
+                />
+              </div>
+              <div class="col-6 pt-4">
+                <input
+                  type="tel"
+                  class="form-control p-lg-3"
+                  placeholder="Telefono"
+                />
+              </div>
+              <div class="col-6 pt-4">
+                <input
+                  type="text"
+                  class="form-control p-lg-3"
+                  placeholder="Motivo"
+                />
+              </div>
+              <div class="form-group pt-4">
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="4"
+                  placeholder="Mensaje"
+                ></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-warning mt-4 p-lg-3">
+              Enviar el mensaje
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="secionDosContacto">
+        <div class="container">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  ¿Cómo es el proceso de compra con ustedes?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  ¿Cómo puedo comunicarme con un asesor de ventas?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  ¿Realizan servicio de prevención para maquinaria pesada?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseF" aria-expanded="false" aria-controls="collapseF">
+                  ¿Dónde están ubicados?
+                </button>
+              </h2>
+              <div id="collapseF" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFi" aria-expanded="false" aria-controls="collapseFi">
+                  ¿Realizan envíos a nivel nacional?
+                </button>
+              </h2>
+              <div id="collapseFi" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="secionTresContacto">
+        <div class="ratio ratio-21x9">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7965.142345207027!2d-76.52745173184087!3d3.4539049960501553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a64393aebe3f%3A0x37c9003c99c22465!2sImportadora%20el%20Gran%20Tornillo%20SAS%20-%20Sede%20Principal!5e0!3m2!1ses-419!2sco!4v1705002184608!5m2!1ses-419!2sco"
+            width="400"
+            height="1200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="contenedor container">
