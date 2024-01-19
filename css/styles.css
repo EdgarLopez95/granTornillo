@@ -723,6 +723,8 @@ footer .contenedor .derecha a {
   font-size: 25px;
   font-weight: bold;
   text-align: center;
+  -webkit-hyphens: none;
+          hyphens: none;
 }
 .mainIndex .seccionTwo .container .card-text {
   text-align: center;
