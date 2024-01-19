@@ -33,6 +33,13 @@
       .btn{
         color: white;
       }
+      .form-control{
+        background-color: #f6f4f0;
+        &::placeholder {
+          color: #939393;
+        }
+        
+      }
       
     }
   }

@@ -626,6 +626,15 @@ footer .contenedor .derecha a {
 .mainIndex .secionUnoContacto .derecha .btn {
   color: white;
 }
+.mainIndex .secionUnoContacto .derecha .form-control {
+  background-color: #f6f4f0;
+}
+.mainIndex .secionUnoContacto .derecha .form-control::-moz-placeholder {
+  color: #939393;
+}
+.mainIndex .secionUnoContacto .derecha .form-control::placeholder {
+  color: #939393;
+}
 .mainIndex .secionDosContacto {
   padding: 70px 50px 70px 50px;
   width: 100%;
