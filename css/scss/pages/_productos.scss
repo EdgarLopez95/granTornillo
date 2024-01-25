@@ -91,6 +91,7 @@
             font-size: clamp(30px, 8vw, 50px);
             font-weight: bold;
             color: $colorDarkBlue;
+            hyphens: none;
           }
           p {
             color: $colorParagraphs;
@@ -122,6 +123,7 @@
             font-size: clamp(30px, 8vw, 50px);
             font-weight: bold;
             color: $colorDarkBlue;
+            hyphens: none;
           }
           p {
             color: $colorParagraphs;
