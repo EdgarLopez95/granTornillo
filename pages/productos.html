@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="../assets/logo pequeno.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -33,7 +40,7 @@
       >
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="../assets/mainLogo.svg" alt="Bootstrap" height="50" />
+            <img src="../assets/logo gran tornillo.png" alt="Bootstrap" />
           </a>
           <button
             class="navbar-toggler"
@@ -57,41 +64,59 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
+                  href="../pages/productos.html"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Productos
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu px-4">
                   <li>
-                    <a class="dropdown-item" href="./productos.html"
-                      >Productos de filtración</a
+                    <a class="dropdown-item" href="../pages/productos.html"
+                      ><i class="bi bi-gear-fill pe-2"></i>Filtración</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./productos.html"
-                      >Productos para tren de rodaje</a
+                    <a class="dropdown-item" href="../pages/productos.html"
+                      ><i class="bi bi-gear-fill pe-2"></i>Tren de rodaje</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./productos.html"
-                      >Herramientas de corte</a
+                    <a class="dropdown-item" href="../pages/productos.html"
+                      ><i class="bi bi-gear-fill pe-2"></i> Herramientas de
+                      corte</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/productos.html"
+                      ><i class="bi bi-gear-fill pe-2"></i>Sistemas
+                      hidráulicos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/productos.html"
+                      ><i class="bi bi-gear-fill pe-2"></i>Partes para motor</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/productos.html"
+                      ><i class="bi bi-gear-fill pe-.2"></i>Herramientas de
+                      corte</a
                     >
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./servicios.html">Servicios</a>
+                <a class="nav-link" href="../pages/servicios.html">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">Contacto</a>
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
               </li>
             </ul>
             <button
@@ -109,9 +134,167 @@
       <div class="bannerNosotros">
         <h3>Productos</h3>
       </div>
-      <div class="secionUnoNosotros">
 
+      <div class="secionUnoProductos container" id="regresar">
+        <img
+          class="imagenEscabadora mb-3"
+          src="../assets/iconoEscabadora.png"
+          alt=""
+        />
+        <h3>Nuestros productos</h3>
+        <p class="parrafo-bienvenidos mb-5">
+          Somos una empresa vallecaucana fundada en 1981. Especialistas en
+          proveer partes y prestar servicios de mantenimiento y reparación de
+          maquinaria pesada y equipos. Ofrecemos partes en marcas originales y
+          marcas homólogas con mejoras aplicadas permitiendo así tener ofertas
+          con mayor relación de precio/beneficio
+        </p>
+        <div class="botones">
+          <div class="elemento-container">
+            <a href="#Productos-de-filtracion" class="Boton">
+              <div class="superior">
+                <img
+                  class="imagen_cuadro pt-2"
+                  src="../assets/productos de filtracion.svg"
+                  alt=""
+                />
+              </div>
+              <div class="inferior">
+                <h4 class="texto_cuadro mx-2">Productos de filtración</h4>
+              </div>
+            </a>
+          </div>
+          <div class="elemento-container">
+            <a href="#tren-de-rodaje" class="Boton">
+              <div class="superior">
+                <img
+                  class="imagen_cuadro pt-2"
+                  src="../assets/tren de rodaje.svg"
+                  alt=""
+                />
+              </div>
+              <div class="inferior">
+                <h4 class="texto_cuadro mx-2">Tren de rodaje</h4>
+              </div>
+            </a>
+          </div>
+          <div class="elemento-container">
+            <a href="#" class="Boton">
+              <div class="superior">
+                <img
+                  class="imagen_cuadro pt-2"
+                  src="../assets/herramientas de corte.svg"
+                  alt=""
+                />
+              </div>
+              <div class="inferior">
+                <h4 class="texto_cuadro mx-2">Herramientas de corte</h4>
+              </div>
+            </a>
+          </div>
+          <div class="elemento-container">
+            <a href="#" class="Boton">
+              <div class="superior">
+                <img
+                  class="imagen_cuadro pt-2"
+                  src="../assets/sistemas hidraulicos.svg"
+                  alt=""
+                />
+              </div>
+              <div class="inferior">
+                <h4 class="texto_cuadro mx-2">Sistemas hidráulicos</h4>
+              </div>
+            </a>
+          </div>
+          <div class="elemento-container">
+            <a href="#" class="Boton">
+              <div class="superior">
+                <img
+                  class="imagen_cuadro pt-2"
+                  src="../assets/partes para motores.svg"
+                  alt=""
+                />
+              </div>
+              <div class="inferior">
+                <h4 class="texto_cuadro mx-2">Partes para motores</h4>
+              </div>
+            </a>
+          </div>
+          <div class="elemento-container">
+            <a href="#" class="Boton">
+              <div class="superior">
+                <img
+                  class="imagen_cuadro pt-2"
+                  src="../assets/direccion y frenos.svg"
+                  alt=""
+                />
+              </div>
+              <div class="inferior">
+                <h4 class="texto_cuadro mx-2">Sistema de dirección y frenos</h4>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
+
+      <div class="seccionDosproductos">
+        <div class="azul" id="Productos-de-filtracion">
+          <div class="contenido container">
+            <div class="izquierda">
+              <img src="../assets/imagen producto de filtracion.jpg" alt="" />
+            </div>
+            <div class="derecha">
+              <h3 class="mb-3">
+                Productos de <br />
+                fitración
+              </h3>
+              <p>
+                ¡Optimice el rendimiento de su maquinaria pesada con nuestros
+                avanzados productos de filtración! En El Gran Tornillo,
+                comprendemos la importancia de mantener sus cortadoras de caña,
+                retroexcavadoras y tractores en condiciones óptimas. Nuestras
+                soluciones de filtración de alta calidad garantizan una
+                protección excepcional contra contaminantes, prolongando la vida
+                útil de sus equipos. Ofrecemos una amplia gama de filtros
+                diseñados específicamente para adaptarse a sus necesidades,
+                brindando eficiencia y fiabilidad incomparables. ¡Eleve su
+                maquinaria a un nuevo nivel de rendimiento con nuestros
+                productos de filtración de vanguardia!
+              </p>
+              <a href="#regresar"
+                ><button type="button" class="btn btn-warning px-4 py-3">
+                  Productos
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="normal" id="tren-de-rodaje">
+          <div class="contenido container">
+            <div class="izquierda">
+              <h3 class="mb-3">
+                Productos para tren de rodaje
+              </h3>
+              <p>
+                Experimente un rendimiento sin igual con nuestro Tren de Rodaje de primera clase para maquinaria pesada. En el Gran Tornillo, nos enorgullece ofrecer soluciones de movilidad excepcionales para sus cortadoras de caña, retroexcavadoras y tractores. Nuestros trenes de rodaje, diseñados con precisión y resistencia, garantizan una tracción óptima y una durabilidad excepcional en terrenos exigentes. Desde la estabilidad mejorada hasta la eficiencia operativa, nuestro tren de rodaje está diseñado para superar sus expectativas. Confíe en la calidad que su maquinaria merece y lleve su rendimiento a nuevas alturas con nuestro Tren de Rodaje de última generación.
+              </p>
+              <a href="#regresar"
+                ><button type="button" class="btn btn-warning px-4 py-3">
+                  Productos
+                </button></a
+              >
+            </div>
+            <div class="derecha">
+              <img src="../assets/imagen tren de rodaje.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="azul"></div>
+        <div class="normal"></div>
+        <div class="azul"></div>
+        <div class="normal"></div>
+      </div>
+
       <section class="seccionSix">
         <h3>contacta con un asesor y resolveremos todas tus dudas</h3>
         <div class="botonLlamar">

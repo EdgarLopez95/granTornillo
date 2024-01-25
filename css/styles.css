@@ -169,6 +169,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.header .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.header .dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+.header a:hover {
+  font-weight: bolder;
+}
+
 .mainIndex .bannerNosotros {
   height: 570px;
   background-image: url(https://raw.githubusercontent.com/EdgarLopez95/granTornillo/main/assets/bannerNosotros.jpg);
@@ -594,6 +605,137 @@ footer .contenedor .derecha a {
   color: #707070;
 }
 
+.mainIndex .secionUnoProductos {
+  padding: 70px 50px 70px 50px;
+}
+.mainIndex .secionUnoProductos .imagenEscabadora {
+  max-width: 50px;
+  margin: 0 auto;
+}
+.mainIndex .secionUnoProductos h3 {
+  text-align: center;
+  font-size: clamp(30px, 8vw, 50px);
+  font-weight: bold;
+  color: #20384a;
+}
+.mainIndex .secionUnoProductos .parrafo-bienvenidos {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  max-width: 900px;
+  margin: 30px auto;
+  color: #707070;
+  -webkit-hyphens: none;
+          hyphens: none;
+}
+.mainIndex .secionUnoProductos .botones {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+}
+.mainIndex .secionUnoProductos .botones .elemento-container {
+  background-color: #20384a;
+  border: 3px solid #376983;
+  border-radius: 10px;
+  width: 174px;
+  height: 144px;
+  transition: all 300ms;
+}
+.mainIndex .secionUnoProductos .botones .elemento-container .superior {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72px;
+}
+.mainIndex .secionUnoProductos .botones .elemento-container .superior .imagen_cuadro {
+  max-width: 60%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.mainIndex .secionUnoProductos .botones .elemento-container .inferior {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72px;
+}
+.mainIndex .secionUnoProductos .botones .elemento-container .inferior .texto_cuadro {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.mainIndex .secionUnoProductos .botones .elemento-container:hover {
+  border: 3px solid #ecaa04;
+  transform: scale(1.05);
+}
+.mainIndex .seccionDosproductos .azul {
+  background-color: #ebf4f6;
+  margin-top: 110px;
+}
+.mainIndex .seccionDosproductos .azul .contenido {
+  padding: 70px 50px 70px 50px;
+  display: flex;
+  width: 100%;
+  gap: 50px;
+  align-items: center;
+}
+.mainIndex .seccionDosproductos .azul .contenido .izquierda {
+  width: 100%;
+}
+.mainIndex .seccionDosproductos .azul .contenido .izquierda img {
+  box-shadow: -20px -20px 0px 0px rgb(32, 56, 74);
+}
+.mainIndex .seccionDosproductos .azul .contenido .derecha {
+  width: 100%;
+}
+.mainIndex .seccionDosproductos .azul .contenido .derecha h3 {
+  font-size: clamp(30px, 8vw, 50px);
+  font-weight: bold;
+  color: #20384a;
+}
+.mainIndex .seccionDosproductos .azul .contenido .derecha p {
+  color: #707070;
+  -webkit-hyphens: none;
+          hyphens: none;
+}
+.mainIndex .seccionDosproductos .azul .contenido .derecha a .btn:hover {
+  border: 2px solid #20384a;
+}
+.mainIndex .seccionDosproductos .normal {
+  margin-top: 110px;
+}
+.mainIndex .seccionDosproductos .normal .contenido {
+  padding: 70px 50px 70px 50px;
+  display: flex;
+  width: 100%;
+  gap: 50px;
+  align-items: center;
+}
+.mainIndex .seccionDosproductos .normal .contenido .izquierda {
+  width: 100%;
+}
+.mainIndex .seccionDosproductos .normal .contenido .izquierda h3 {
+  font-size: clamp(30px, 8vw, 50px);
+  font-weight: bold;
+  color: #20384a;
+}
+.mainIndex .seccionDosproductos .normal .contenido .izquierda p {
+  color: #707070;
+  -webkit-hyphens: none;
+          hyphens: none;
+}
+.mainIndex .seccionDosproductos .normal .contenido .izquierda a .btn:hover {
+  border: 2px solid #20384a;
+}
+.mainIndex .seccionDosproductos .normal .contenido .derecha {
+  width: 100%;
+}
+.mainIndex .seccionDosproductos .normal .contenido .derecha img {
+  box-shadow: 20px 20px 0px 0px rgb(32, 56, 74);
+}
+
 .mainIndex .secionUnoContacto {
   padding: 70px 50px 70px 50px;
   display: flex;
@@ -639,6 +781,21 @@ footer .contenedor .derecha a {
   padding: 70px 50px 70px 50px;
   width: 100%;
   background-color: #fab800;
+}
+.mainIndex .secionDosContacto .container .imagenEscabadora {
+  max-width: 50px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+.mainIndex .secionDosContacto .container h3 {
+  margin: 0 auto;
+  text-align: center;
+  color: #20384a;
+  font-size: clamp(30px, 8vw, 50px);
+  font-weight: bold;
+  -webkit-hyphens: none;
+          hyphens: none;
+  padding-bottom: 50px;
 }
 .mainIndex .secionDosContacto button {
   color: #20384a;
@@ -894,11 +1051,23 @@ footer .contenedor .derecha a {
 }
 
 @media screen and (max-width: 1400px) {
+  .mainIndex .secionUnoProductos {
+    padding: 30px 10px;
+  }
+  .mainIndex .secionUnoProductos .botones {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .mainIndex .seccionCuatroNosotros {
     margin-bottom: 100px;
   }
 }
 @media screen and (max-width: 1100px) {
+  .mainIndex .secionUnoProductos {
+    padding: 30px 10px;
+  }
+  .mainIndex .secionUnoProductos .botones {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .mainIndex .seccionTrees .seccionOne_div-derecho {
     flex: 100%;
   }
@@ -958,6 +1127,11 @@ footer .contenedor .derecha a {
   }
 }
 @media screen and (max-width: 768px) {
+  .seccionDosproductos .azul .contenido {
+    gap: 20px;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+  }
   footer .contenedor {
     grid-template-columns: repeat(1, 1fr);
     padding-top: 50px;
@@ -973,6 +1147,9 @@ footer .contenedor .derecha a {
   }
 }
 @media screen and (max-width: 600px) {
+  .mainIndex .secionUnoProductos .botones {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .mainIndex .seccionFour .contenedor-logos .logos {
     grid-template-columns: repeat(3, 1fr);
   }

@@ -49,6 +49,23 @@
     width: 100%;
    
     background-color: $colorYellow;
+    .container{
+      .imagenEscabadora {
+        max-width: 50px;
+        padding-bottom: 15px;
+        margin: 0 auto;
+      }
+      h3 {
+        margin: 0 auto;
+        text-align: center;
+        color: $colorDarkBlue;
+        font-size: clamp(30px, 8vw, 50px);
+        font-weight: bold;
+        hyphens: none;
+        padding-bottom: 50px;
+      }
+    }
+   
     button{
         color: $colorDarkBlue;
         font-weight: bold;

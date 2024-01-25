@@ -1,5 +1,11 @@
 @media screen and (max-width: 1400px) {
   .mainIndex {
+    .secionUnoProductos {
+      padding: 30px 10px;
+      .botones{
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
     .seccionCuatroNosotros {
       margin-bottom: 100px;
       .container {
@@ -11,6 +17,13 @@
 }
 @media screen and (max-width: 1100px) {
   .mainIndex {
+    .secionUnoProductos {
+      padding: 30px 10px;
+      .botones{
+        grid-template-columns: repeat(3, 1fr);
+      }
+     
+    }
     .seccionTrees {
       .seccionOne_div-derecho {
         flex: 100%;
@@ -34,6 +47,7 @@
         }
       }
     }
+
     .seccionFour {
       .contenedor-logos {
         .logos {
@@ -47,6 +61,7 @@
 
 @media screen and (max-width: 1000px) {
   .mainIndex {
+
     .seccionUnoNosotros {
       gap: 20px;
       padding: 30px 10px;
@@ -89,6 +104,15 @@
 }
 
 @media screen and (max-width: 768px) {
+  .seccionDosproductos{
+    .azul{
+      .contenido{
+        gap: 20px;
+        padding: 30px 10px;
+        flex-wrap: wrap;
+      }
+    }
+  }
   footer {
     .contenedor {
       grid-template-columns: repeat(1, 1fr);
@@ -114,6 +138,12 @@
 
 @media screen and (max-width: 600px) {
   .mainIndex {
+    .secionUnoProductos {
+      .botones{
+        grid-template-columns: repeat(1, 1fr);
+
+      }
+    }
     .seccionFour {
       .contenedor-logos {
         .logos {
