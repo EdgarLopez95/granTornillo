@@ -169,7 +169,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.header .logo-principal {
+.header .navbar-brand .logo-principal {
   max-width: 60%;
   max-height: 100%;
   -o-object-fit: contain;
@@ -1150,6 +1150,7 @@ footer .contenedor .derecha a {
     gap: 20px;
     padding: 30px 25px;
     flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
   }
   footer .contenedor {
     grid-template-columns: repeat(1, 1fr);

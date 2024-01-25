@@ -1,9 +1,12 @@
 .header {
-  .logo-principal {
-    max-width: 60%;
-    max-height: 100%;
-    object-fit: contain;
+  .navbar-brand {
+    .logo-principal {
+      max-width: 60%;
+      max-height: 100%;
+      object-fit: contain;
+    }
   }
+
   .dropdown:hover > .dropdown-menu {
     display: block;
   }
