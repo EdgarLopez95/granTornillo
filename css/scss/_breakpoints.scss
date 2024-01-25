@@ -106,9 +106,20 @@
 @media screen and (max-width: 768px) {
   .seccionDosproductos{
     .azul{
+      margin-top: 50px;
+
       .contenido{
         gap: 20px;
-        padding: 30px 10px;
+        padding: 30px 25px;
+        flex-wrap: wrap;
+      }
+    }
+    .normal{
+      margin-top: 5px;
+
+      .contenido{
+        gap: 20px;
+        padding: 30px 25px;
         flex-wrap: wrap;
       }
     }
@@ -138,10 +149,19 @@
 
 @media screen and (max-width: 600px) {
   .mainIndex {
+    
     .secionUnoProductos {
       .botones{
         grid-template-columns: repeat(1, 1fr);
 
+      }
+    }
+    .seccionDosproductos{
+      .azul{
+        margin-top: 5px; 
+      }
+      .normal{
+        margin-top: 5px;
       }
     }
     .seccionFour {

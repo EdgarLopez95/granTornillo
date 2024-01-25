@@ -169,6 +169,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.header .logo-principal {
+  max-width: 60%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .header .dropdown:hover > .dropdown-menu {
   display: block;
 }
@@ -675,7 +681,8 @@ footer .contenedor .derecha a {
   margin-top: 110px;
 }
 .mainIndex .seccionDosproductos .azul .contenido {
-  padding: 70px 50px 70px 50px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   display: flex;
   width: 100%;
   gap: 50px;
@@ -707,7 +714,8 @@ footer .contenedor .derecha a {
   margin-top: 110px;
 }
 .mainIndex .seccionDosproductos .normal .contenido {
-  padding: 70px 50px 70px 50px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   display: flex;
   width: 100%;
   gap: 50px;
@@ -1127,9 +1135,20 @@ footer .contenedor .derecha a {
   }
 }
 @media screen and (max-width: 768px) {
+  .seccionDosproductos .azul {
+    margin-top: 50px;
+  }
   .seccionDosproductos .azul .contenido {
     gap: 20px;
-    padding: 30px 10px;
+    padding: 30px 25px;
+    flex-wrap: wrap;
+  }
+  .seccionDosproductos .normal {
+    margin-top: 5px;
+  }
+  .seccionDosproductos .normal .contenido {
+    gap: 20px;
+    padding: 30px 25px;
     flex-wrap: wrap;
   }
   footer .contenedor {
@@ -1149,6 +1168,12 @@ footer .contenedor .derecha a {
 @media screen and (max-width: 600px) {
   .mainIndex .secionUnoProductos .botones {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .mainIndex .seccionDosproductos .azul {
+    margin-top: 5px;
+  }
+  .mainIndex .seccionDosproductos .normal {
+    margin-top: 5px;
   }
   .mainIndex .seccionFour .contenedor-logos .logos {
     grid-template-columns: repeat(3, 1fr);

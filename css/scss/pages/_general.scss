@@ -1,21 +1,25 @@
-.header{
-  .dropdown:hover>.dropdown-menu {
+.header {
+  .logo-principal {
+    max-width: 60%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  .dropdown:hover > .dropdown-menu {
     display: block;
   }
-  
-  .dropdown>.dropdown-toggle:active {
-    /*Without this, clicking will make it sticky*/
-      pointer-events: none;
-  }
-  a{
 
-    &:hover{
+  .dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+  }
+  a {
+    &:hover {
       font-weight: bolder;
     }
   }
 }
 .mainIndex {
-  .bannerNosotros{
+  .bannerNosotros {
     height: 570px;
     background-image: url(https://raw.githubusercontent.com/EdgarLopez95/granTornillo/main/assets/bannerNosotros.jpg);
     background-size: cover; /* Hace que la imagen cubra todo el contenedor */
@@ -38,7 +42,7 @@
       padding: 0 20px 20px 30px;
     }
   }
-  .bannerProdcutos{
+  .bannerProdcutos {
     height: 570px;
     background-image: url(https://raw.githubusercontent.com/EdgarLopez95/granTornillo/main/assets/bannerProducto.jpg);
     background-size: cover; /* Hace que la imagen cubra todo el contenedor */
@@ -61,7 +65,7 @@
       padding: 0 20px 20px 30px;
     }
   }
-  .bannerServicios{
+  .bannerServicios {
     height: 570px;
     background-image: url(https://raw.githubusercontent.com/EdgarLopez95/granTornillo/main/assets/bannerServicio.jpg);
     background-size: cover; /* Hace que la imagen cubra todo el contenedor */
@@ -84,7 +88,7 @@
       padding: 0 20px 20px 30px;
     }
   }
-  .bannerContacto{
+  .bannerContacto {
     height: 570px;
     background-image: url(https://raw.githubusercontent.com/EdgarLopez95/granTornillo/main/assets/bannersContacto.jpg);
     background-size: cover; /* Hace que la imagen cubra todo el contenedor */
@@ -107,9 +111,8 @@
       padding: 0 20px 20px 30px;
     }
   }
-  .secionUnoNosotros{
+  .secionUnoNosotros {
     height: 400px;
-    
   }
   .seccionSix {
     height: 670px;
@@ -130,7 +133,6 @@
       max-width: 800px;
       padding: 30px 10px 30px 10px;
       hyphens: none;
-      
     }
   }
 }
