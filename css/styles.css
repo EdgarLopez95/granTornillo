@@ -1149,6 +1149,9 @@ footer .contenedor .derecha a {
     padding: 30px 10px;
     flex-wrap: wrap;
   }
+  .mainIndex .secionUnoServicios {
+    padding: 30px 10px;
+  }
   .mainIndex .seccionDosNosotros {
     padding: 30px 10px;
   }
