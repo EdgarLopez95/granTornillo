@@ -748,6 +748,43 @@ footer .contenedor .derecha a {
   box-shadow: 20px 20px 0px 0px rgb(32, 56, 74);
 }
 
+.mainIndex .secionUnoServicios {
+  padding: 70px 50px 70px 50px;
+}
+.mainIndex .secionUnoServicios .imagenEscabadora {
+  max-width: 50px;
+  margin: 0 auto;
+}
+.mainIndex .secionUnoServicios h3 {
+  text-align: center;
+  font-size: clamp(30px, 8vw, 50px);
+  font-weight: bold;
+  color: #20384a;
+}
+.mainIndex .secionUnoServicios .parrafo-bienvenidos {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  max-width: 900px;
+  margin: 30px auto;
+  color: #707070;
+  -webkit-hyphens: none;
+          hyphens: none;
+}
+.mainIndex .secionUnoServicios .row .col .card .card-body .card-title {
+  color: #20384a;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-hyphens: none;
+          hyphens: none;
+}
+.mainIndex .secionUnoServicios .row .col .card .card-body .card-text {
+  text-align: center;
+  -webkit-hyphens: none;
+          hyphens: none;
+}
+
 .mainIndex .secionUnoContacto {
   padding: 70px 50px 70px 50px;
   display: flex;
