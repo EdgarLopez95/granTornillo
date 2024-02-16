@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="shortcut icon" href="./assets/logo pequeno.png">
+    <link rel="shortcut icon" href="./assets/logo pequeno.png" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -30,13 +33,22 @@
     <title>Inicio</title>
   </head>
   <body>
+    <a
+      href="https://api.whatsapp.com/send/?phone=573024329221&text&type=phone_number&app_absent=0"
+      class="float boton-wap"
+      target="_blank"
+    >
+      <i class="fa fa-whatsapp my-float"></i>
+    </a>
     <header class="header">
-      <nav
-        class="navbar fixed-top navbar-expand-lg pt-3 pb-3 fixed-top bg-white"
-      >
+      <nav class="navbar fixed-top navbar-expand-lg fixed-top bg-white">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="./assets/logo gran tornillo.png" alt="Bootstrap" />
+            <img
+              src="./assets/mainLogo.svg"
+              alt="Bootstrap"
+              class="logo-principal"
+            />
           </a>
           <button
             class="navbar-toggler"
@@ -51,7 +63,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
+              <li class="nav-item px-3">
                 <a
                   class="nav-link active"
                   aria-current="page"
@@ -59,70 +71,19 @@
                   >Inicio</a
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item px-3">
                 <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="./pages/productos.html"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Productos
-                </a>
-                <ul class="dropdown-menu px-4">
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="./pages/productos.html#Productos-de-filtracion"
-                      ><i class="bi bi-gear-fill pe-2"></i>Filtración</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./pages/productos.html#tren-de-rodaje"
-                      ><i class="bi bi-gear-fill pe-2"></i>Tren de rodaje</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./pages/productos.html#herramientas-de-corte"
-                      ><i class="bi bi-gear-fill pe-2"></i>Herramientas de
-                      corte</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./pages/productos.html#sistemas-hidraulicos"
-                      ><i class="bi bi-gear-fill pe-2"></i>Sistemas
-                      hidráulicos</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./pages/productos.html#partes-para-motores"
-                      ><i class="bi bi-gear-fill pe-2"></i>Partes para motor</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./pages/productos.html#sistema-de-direccion-y-frenos"
-                      ><i class="bi bi-gear-fill pe-2"></i>Sistema de dirección y frenos</a
-                    >
-                  </li>
-                </ul>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="./pages/productos.html">Producto</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item px-3">
                 <a class="nav-link" href="./pages/servicios.html">Servicios</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item px-3">
                 <a class="nav-link" href="./pages/contacto.html">Contacto</a>
               </li>
             </ul>
-            <button
-              class="btn btn-warning px-4 boton-editar"
-              type="button"
-            >
-              <i class="fa fa-whatsapp"></i> <span>Escríbenos</span> <br />
-              <strong>+57 318 4152 496</strong>
-            </button>
           </div>
         </div>
       </nav>
@@ -152,11 +113,7 @@
         />
         <h3>Bienvenidos</h3>
         <p class="parrafo-bienvenidos">
-          Somos una empresa vallecaucana fundada en 1981. Especialistas en
-          proveer partes y prestar servicios de mantenimiento y reparación de
-          maquinaria pesada y equipos. Ofrecemos partes en marcas originales y
-          marcas homólogas con mejoras aplicadas permitiendo así tener ofertas
-          con mayor relación de precio/beneficio
+          Somos especialistas en proveer repuestos y servicios de mantenimiento y reparación para maquinaria pesada y equipos. Ofrecemos repuestos de marcas originales y homólogas con mejoras, garantizando la mejor relación precio/beneficio.
         </p>
         <div class="container">
           <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -170,9 +127,8 @@
                 <div class="card-body">
                   <h5 class="card-title">Multimarcas</h5>
                   <p class="card-text">
-                    Nuestra gran variedad de partes y marcas originales y
-                    homólogas, nos permite ofrecer a nuestros clientes lo que
-                    necesitan.
+                    Explora nuestra amplia variedad de partes y marcas certificadas para brindarte la calidad y confianza que tu maquinaria merece.
+
                   </p>
                 </div>
                 <button
@@ -193,9 +149,8 @@
                 <div class="card-body">
                   <h5 class="card-title">Atención personalizada</h5>
                   <p class="card-text">
-                    Nuestra ATENCIÓN y acompañamiento a nuestros clientes, nos
-                    ha permitido crear relaciones duraderas basadas en la
-                    confianza.
+                    Nuestro enfoque <strong>atención y acompañamiento</strong> en a nuestros clientes ha permitido crear relaciones duraderas basadas en la confianza.
+
                   </p>
                 </div>
                 <button
@@ -216,9 +171,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Taller</h5>
                   <p class="card-text">
-                    Servicios a tu alcance. Prestamos servicios de mantenimiento
-                    y reparación en nuestro taller o en las instalaciones del
-                    cliente.
+                    Con nuestros servicios a tu alcance, prestamos servicio de mantenimiento y reparación en nuestro taller como en las instalaciones del cliente.
                   </p>
                 </div>
                 <button

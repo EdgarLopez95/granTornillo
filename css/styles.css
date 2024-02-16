@@ -169,21 +169,42 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body .boton-wap {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+body .boton-wap .my-float {
+  margin-top: 16px;
+}
+body .boton-wap:hover {
+  text-decoration: none;
+  color: #25d366;
+  background-color: #fff;
+}
+
 .header .navbar-brand .logo-principal {
-  max-width: 60%;
+  max-width: 65%;
   max-height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.header .dropdown:hover > .dropdown-menu {
-  display: block;
-}
-.header .dropdown > .dropdown-toggle:active {
-  /*Without this, clicking will make it sticky*/
-  pointer-events: none;
+.header a {
+  color: #20384a;
+  font-weight: bold;
 }
 .header a:hover {
   font-weight: bolder;
+  color: #fab800;
 }
 
 .mainIndex .bannerNosotros {

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="shortcut icon" href="../assets/logo pequeno.png">
+    <link rel="shortcut icon" href="../assets/logo pequeno.png" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -32,13 +32,22 @@
     <title>Inicio</title>
   </head>
   <body>
+    <a
+      href="https://api.whatsapp.com/send/?phone=573024329221&text&type=phone_number&app_absent=0"
+      class="float boton-wap"
+      target="_blank"
+    >
+      <i class="fa fa-whatsapp my-float"></i>
+    </a>
     <header class="header">
-      <nav
-        class="navbar fixed-top navbar-expand-lg pt-3 pb-3 fixed-top bg-white"
-      >
+      <nav class="navbar fixed-top navbar-expand-lg fixed-top bg-white">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="../assets/logo gran tornillo.png" alt="Bootstrap" />
+            <img
+              src="../assets/mainLogo.svg"
+              alt="Bootstrap"
+              class="logo-principal"
+            />
           </a>
           <button
             class="navbar-toggler"
@@ -53,7 +62,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
+              <li class="nav-item px-3">
                 <a
                   class="nav-link active"
                   aria-current="page"
@@ -61,70 +70,19 @@
                   >Inicio</a
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item px-3">
                 <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="../pages/productos.html"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Productos
-                </a>
-                <ul class="dropdown-menu px-4">
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="../pages/productos.html#Productos-de-filtracion"
-                      ><i class="bi bi-gear-fill pe-2"></i>Filtración</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../pages/productos.html#tren-de-rodaje"
-                      ><i class="bi bi-gear-fill pe-2"></i>Tren de rodaje</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../pages/productos.html#herramientas-de-corte"
-                      ><i class="bi bi-gear-fill pe-2"></i>Herramientas de
-                      corte</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../pages/productos.html#sistemas-hidraulicos"
-                      ><i class="bi bi-gear-fill pe-2"></i>Sistemas
-                      hidráulicos</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../pages/productos.html#partes-para-motores"
-                      ><i class="bi bi-gear-fill pe-2"></i>Partes para motor</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../pages/productos.html#sistema-de-direccion-y-frenos"
-                      ><i class="bi bi-gear-fill pe-2"></i>Sistema de dirección y frenos</a
-                    >
-                  </li>
-                </ul>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="../pages/productos.html">Producto</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item px-3">
                 <a class="nav-link" href="../pages/servicios.html">Servicios</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item px-3">
                 <a class="nav-link" href="../pages/contacto.html">Contacto</a>
               </li>
             </ul>
-            <button
-              class="btn btn-outline-warning px-4 boton-editar"
-              type="button"
-            >
-              <i class="fa fa-whatsapp"></i> <span>Escríbenos</span> <br />
-              <strong>+57 318 4152 496</strong>
-            </button>
           </div>
         </div>
       </nav>
@@ -135,70 +93,117 @@
       </div>
       <div class="secionUnoServicios container">
         <img
-        class="imagenEscabadora mb-3"
-        src="../assets/iconoEscabadora.png"
-        alt=""
-      />
-      <h3>Nuestros servicios</h3>
-      <p class="parrafo-bienvenidos mb-5">
-        Somos una empresa vallecaucana fundada en 1981. Especialistas en
-        proveer partes y prestar servicios de mantenimiento y reparación de
-        maquinaria pesada y equipos. Ofrecemos partes en marcas originales y
-        marcas homólogas con mejoras aplicadas permitiendo así tener ofertas
-        con mayor relación de precio/beneficio
-      </p>
+          class="imagenEscabadora mb-3"
+          src="../assets/iconoEscabadora.png"
+          alt=""
+        />
+        <h3>Nuestros servicios</h3>
+        <p class="parrafo-bienvenidos mb-5">
+          Somos una empresa vallecaucana fundada en 1981. Especialistas en
+          proveer partes y prestar servicios de mantenimiento y reparación de
+          maquinaria pesada y equipos. Ofrecemos partes en marcas originales y
+          marcas homólogas con mejoras aplicadas permitiendo así tener ofertas
+          con mayor relación de precio/beneficio
+        </p>
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100">
-              <img src="../assets/imagen-servicio-diagnostico.jpg" class="card-img-top" alt="...">
+              <img
+                src="../assets/imagen-servicio-diagnostico.jpg"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Diagnóstico</h5>
-                <p class="card-text">Prestamos el servicio de diagnóstico, con el fin de identificar las posibles fallas de su maquinaria y equipos. Nuestro personal técnico se especializa en realizar un completo y detallado informe diagnóstico.</p>
+                <p class="card-text">
+                  Prestamos el servicio de diagnóstico, con el fin de
+                  identificar las posibles fallas de su maquinaria y equipos.
+                  Nuestro personal técnico se especializa en realizar un
+                  completo y detallado informe diagnóstico.
+                </p>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="../assets/imagen-mantenimiento-preventivo.jpg" class="card-img-top" alt="...">
+              <img
+                src="../assets/imagen-mantenimiento-preventivo.jpg"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Mantenimiento preventivo</h5>
-                <p class="card-text">Realizamos mantenimientos oportunos, con el fin de prevenir, controlar y asegurar el adecuado funcionamiento de su maquinaria o equipo.</p>
+                <p class="card-text">
+                  Realizamos mantenimientos oportunos, con el fin de prevenir,
+                  controlar y asegurar el adecuado funcionamiento de su
+                  maquinaria o equipo.
+                </p>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="../assets/imagen-instalacion.jpg" class="card-img-top" alt="...">
+              <img
+                src="../assets/imagen-instalacion.jpg"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Instalación</h5>
-                <p class="card-text">Ofrecemos servicios de instalación y desinstalación de todos los componentes de su maquinaria y equipo.</p>
+                <p class="card-text">
+                  Ofrecemos servicios de instalación y desinstalación de todos
+                  los componentes de su maquinaria y equipo.
+                </p>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="../assets/imagen-latoneria-y-pintura.jpg" class="card-img-top" alt="...">
+              <img
+                src="../assets/imagen-latoneria-y-pintura.jpg"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Latonería y pintura</h5>
-                <p class="card-text">Nos encargamos de embellecer su maquinaria, buscando entregar en condiciones óptimas de presentación.</p>
+                <p class="card-text">
+                  Nos encargamos de embellecer su maquinaria, buscando entregar
+                  en condiciones óptimas de presentación.
+                </p>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="../assets/imagen-reparacion.jpg" class="card-img-top" alt="...">
+              <img
+                src="../assets/imagen-reparacion.jpg"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Reparación</h5>
-                <p class="card-text">Reparamos todo tipo de maquinaria, equipos y componentes, de las diferentes marcas en las cuales nuestro personal técnico tiene amplia experiencia. Hecho que pueden certificar nuestros clientes.</p>
+                <p class="card-text">
+                  Reparamos todo tipo de maquinaria, equipos y componentes, de
+                  las diferentes marcas en las cuales nuestro personal técnico
+                  tiene amplia experiencia. Hecho que pueden certificar nuestros
+                  clientes.
+                </p>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="../assets/imagen-seguimiento.jpg" class="card-img-top" alt="...">
+              <img
+                src="../assets/imagen-seguimiento.jpg"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Seguimiento</h5>
-                <p class="card-text">Realizamos el seguimiento postventa, con el fin de monitorear la eficacia de nuestros servicios.</p>
+                <p class="card-text">
+                  Realizamos el seguimiento postventa, con el fin de monitorear
+                  la eficacia de nuestros servicios.
+                </p>
               </div>
             </div>
           </div>
