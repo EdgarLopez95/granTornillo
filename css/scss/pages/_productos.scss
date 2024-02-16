@@ -10,6 +10,7 @@
       font-size: clamp(30px, 8vw, 50px);
       font-weight: bold;
       color: $colorDarkBlue;
+      hyphens: none;
     }
     .parrafo-bienvenidos {
       font-size: 16px;
@@ -20,11 +21,43 @@
       color: $colorParagraphs;
       hyphens: none;
     }
+    .a {
+      display: grid;
+      gap: 15px;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+      .superior {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        // background-color: #ecaa04;
+        height: 120px;
+        .imagen_cuadro {
+          max-width: 60%;
+          max-height: 100%;
+          object-fit: contain;
+        }
+      }
+      .inferior {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        //background-color: aqua;
+        height: 72px;
+        .texto_cuadro {
+          font-size: 18px;
+          font-weight: bold;
+          color: white;
+          text-align: center;
+        }
+      }
+    }
 
     .botones {
       display: grid;
       gap: 15px;
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       justify-items: center;
       .elemento-container {
         background-color: $colorDarkBlue;
@@ -64,84 +97,6 @@
         &:hover {
           border: 3px solid #ecaa04;
           transform: scale(1.05);
-        }
-      }
-    }
-  }
-  .seccionDosproductos {
-    .azul {
-      background-color: #ebf4f6;
-      margin-top: 110px;
-      .contenido {
-        padding-top: 70px;
-        padding-bottom: 70px;
-        display: flex;
-        width: 100%;
-        gap: 50px;
-        align-items: center;
-        .izquierda {
-          width: 100%;
-          img {
-            box-shadow: -20px -20px 0px 0px rgba(32, 56, 74, 1);
-          }
-        }
-        .derecha {
-          width: 100%;
-          h3 {
-            font-size: clamp(30px, 8vw, 50px);
-            font-weight: bold;
-            color: $colorDarkBlue;
-            hyphens: none;
-          }
-          p {
-            color: $colorParagraphs;
-            hyphens: none;
-          }
-          a {
-            .btn {
-              &:hover {
-                border: 2px solid $colorDarkBlue;
-              }
-            }
-          }
-        }
-      }
-    }
-    .normal {
-      //background-color: #ebf4f6;
-      margin-top: 110px;
-      .contenido {
-        padding-top: 70px;
-        padding-bottom: 70px;
-        display: flex;
-        width: 100%;
-        gap: 50px;
-        align-items: center;
-        .izquierda {
-          width: 100%;
-          h3 {
-            font-size: clamp(30px, 8vw, 50px);
-            font-weight: bold;
-            color: $colorDarkBlue;
-            hyphens: none;
-          }
-          p {
-            color: $colorParagraphs;
-            hyphens: none;
-          }
-          a {
-            .btn {
-              &:hover {
-                border: 2px solid $colorDarkBlue;
-              }
-            }
-          }
-        }
-        .derecha {
-          width: 100%;
-          img {
-            box-shadow: 20px 20px 0px 0px rgba(32, 56, 74, 1);
-          }
         }
       }
     }
