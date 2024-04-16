@@ -459,7 +459,6 @@ footer .contenedor .derecha a {
 .mainIndex .seccionCuatroNosotros .container .historia {
   height: 800px;
   width: 100%;
-  background-color: aliceblue;
 }
 .mainIndex .seccionCuatroNosotros .container .informacion_cuadro {
   margin-top: 50px;
@@ -999,6 +998,7 @@ footer .contenedor .derecha a {
   width: 100%;
 }
 .mainIndex .seccionFive {
+  display: none;
   background-color: white;
   padding: 50px 0;
 }
