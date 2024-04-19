@@ -104,10 +104,9 @@
           color: #fab800;
           margin-bottom: 100px;
         }
-        :focus {
-          outline: 0px solid transparent !important;
-        }
+  
         .timeline {
+          display: none;
           padding: 50px 0;
           position: relative;
         }
@@ -301,7 +300,9 @@
 
         /*extra small device style */
         @media (max-width: 575px) {
- 
+          .timeline{
+            padding:20px ;
+          }
           .timeline-image {
             display: none;
             position: absolute;

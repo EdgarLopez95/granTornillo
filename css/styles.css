@@ -480,10 +480,8 @@ footer .contenedor .derecha a {
   color: #fab800;
   margin-bottom: 100px;
 }
-.mainIndex .seccionCuatroNosotros .container .historia :focus {
-  outline: 0px solid transparent !important;
-}
 .mainIndex .seccionCuatroNosotros .container .historia .timeline {
+  display: none;
   padding: 50px 0;
   position: relative;
 }
@@ -668,6 +666,9 @@ footer .contenedor .derecha a {
   }
 }
 @media (max-width: 575px) {
+  .mainIndex .seccionCuatroNosotros .container .historia .timeline {
+    padding: 20px;
+  }
   .mainIndex .seccionCuatroNosotros .container .historia .timeline-image {
     display: none;
     position: absolute;
