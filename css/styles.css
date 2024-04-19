@@ -495,6 +495,8 @@ footer .contenedor .derecha a {
 }
 .mainIndex .seccionCuatroNosotros .container .historia .timeline h3,
 .mainIndex .seccionCuatroNosotros .container .historia .timeline p {
+  -webkit-hyphens: none;
+          hyphens: none;
   padding: 2px;
   margin: 0;
 }
@@ -725,7 +727,7 @@ footer .contenedor .derecha a {
 }
 @media (max-width: 575px) {
   .mainIndex .seccionCuatroNosotros .container .historia .timeline {
-    padding: 20px;
+    padding: 1px;
   }
   .mainIndex .seccionCuatroNosotros .container .historia .timeline-image {
     display: none;

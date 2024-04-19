@@ -121,6 +121,7 @@
         }
         .timeline h3,
         .timeline p {
+          hyphens: none;
           padding: 2px;
           margin: 0;
         }
@@ -361,7 +362,7 @@
         /*extra small device style */
         @media (max-width: 575px) {
           .timeline {
-            padding: 20px;
+            padding: 1px;
           }
           .timeline-image {
             display: none;
