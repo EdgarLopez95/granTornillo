@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85.58 85.58">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fab800;
+      }
+
+      .cls-2 {
+        fill: #22384b;
+        font-family: Montserrat-Bold, Montserrat;
+        font-size: 18.6px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Capa_2-2" data-name="Capa 2">
+    <g>
+      <circle class="cls-1" cx="42.79" cy="42.79" r="42.79"/>
+      <text class="cls-2" transform="translate(24.8 50.74)"><tspan x="0" y="0">1981</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,7 +1,7 @@
 :root {
   --white: #ffffff;
   --black: #000000;
-  --blue: #0288d1;
+  --blue: #fab800;
   --gray: #ebebeb;
   --box-shadow1: 0px 0px 18px 2px rgba(10, 55, 90, 0.15);
 }
@@ -121,7 +121,8 @@
         }
         .timeline h3,
         .timeline p {
-          padding: 5px 15px;
+          padding: 2px;
+          margin: 0;
         }
         .timeline h3 {
           font-weight: lighter;
@@ -129,7 +130,7 @@
         }
         .timeline p,
         .timeline time {
-          color: var(--blue);
+          color: white;
         }
         .timeline::before {
           content: "";
@@ -138,17 +139,18 @@
           top: 0;
           left: 50%;
           width: 0;
-          border-left: 2px dashed var(--blue);
+          border-left: 8px solid white;
           height: 100%;
           z-index: 1;
           transform: translateX(-50%);
         }
 
         .timeline-content {
-          border: 1px solid var(--blue);
+          border: 1px solid rgba(255, 255, 255, 0.308);
           position: relative;
-          border-radius: 0 0 10px 10px;
+          border-radius: 10px 10px 10px 10px;
           box-shadow: 0px 3px 25px 0px rgba(10, 55, 90, 0.2);
+          background-color: #00425859;
         }
         .timeline-nodes:nth-child(odd) .imagenn,
         .timeline-nodes:nth-child(odd) p {
@@ -157,23 +159,19 @@
           margin-right: 0;
           display: block;
         }
+        .cuadrito {
+          display: flex;
+          align-items: center;
+        }
         .imagenn {
-          // position: absolute;
           max-width: 40%;
-          top: 0;
-          //left: 0;
           padding: 10px 0;
           height: auto;
         }
         .texto-derecha {
-          position: absolute;
-          top: 0;
-          left: 0;
           padding-left: 10px; /* Espacio entre la imagen y el texto (ajustable) */
           max-width: 60%; /* Ancho máximo que ocupará el texto (ajustable) */
-          box-sizing: border-box; /* Incluye el padding en el ancho total */
-          top: 50%; /* Coloca la parte superior del texto en el centro vertical */
-          transform: translateY(-50%);
+          margin-bottom: 0;
         }
         .texto-derecha-b {
           position: absolute;
@@ -195,48 +193,38 @@
         .timeline-nodes:nth-child(odd) .timeline-content::after {
           content: "";
           position: absolute;
-          top: 5%;
+          top: 37%;
           left: 100%;
           width: 0;
-          border-left: 10px solid var(--blue);
-          border-top: 10px solid transparent;
-          border-bottom: 10px solid transparent;
+          border-left: 15px solid #fab800;
+          border-top: 15px solid transparent;
+          border-bottom: 15px solid transparent;
         }
         .timeline-nodes:nth-child(even) .timeline-content::after {
           content: "";
           position: absolute;
-          top: 5%;
+          top: 37%;
           right: 100%;
           width: 0;
-          border-right: 10px solid var(--blue);
-          border-top: 10px solid transparent;
-          border-bottom: 10px solid transparent;
+          border-right: 15px solid #fab800;
+          border-top: 15px solid transparent;
+          border-bottom: 15px solid transparent;
         }
         .timeline-image {
           position: relative;
           z-index: 100;
+          width: 150px;
+          height: 150px;
+          margin-top: 30px;
         }
-        .timeline-image::before {
-          content: "";
-          width: 80px;
-          height: 80px;
-          border: 2px dashed var(--blue);
-          border-radius: 50%;
-          display: block;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          background-color: #fff;
-          z-index: 1;
-        }
+
         .timeline-image img {
           position: relative;
           z-index: 100;
         }
         /*small device style*/
 
-        @media (max-width: 767px) {
+        @media (max-width: 1000px) {
           .timeline-nodes:nth-child(odd) h3,
           .timeline-nodes:nth-child(odd) p {
             text-align: left;
@@ -249,9 +237,9 @@
             display: block;
             position: absolute;
             top: 0;
-            left: 4%;
+            left: 0;
             width: 0;
-            border-left: 2px dashed var(--blue);
+            border-left: 8px solid white;
             height: 100%;
             z-index: 1;
             transform: translateX(-50%);
@@ -265,14 +253,14 @@
           }
           .timeline-image {
             position: absolute;
-            left: 0%;
-            top: 60px;
+            left: -10%;
+            //top: 60px;
             /*transform: translateX(-50%;);*/
           }
           .timeline-nodes:nth-child(odd) .timeline-content::after {
             content: "";
             position: absolute;
-            top: 5%;
+            top: 45%;
             left: auto;
             right: 100%;
             width: 0;
@@ -284,12 +272,15 @@
           .timeline-nodes:nth-child(even) .timeline-content::after {
             content: "";
             position: absolute;
-            top: 5%;
+            top: 45%;
             right: 100%;
             width: 0;
             border-right: 10px solid var(--blue);
             border-top: 10px solid transparent;
             border-bottom: 10px solid transparent;
+          }
+          .timeline-date {
+            display: none;
           }
           .timeline-nodes:nth-child(even) .timeline-date {
             text-align: left;
@@ -299,7 +290,74 @@
             height: 65px;
           }
         }
+        @media (max-width: 767px) {
+          .timeline-nodes:nth-child(odd) h3,
+          .timeline-nodes:nth-child(odd) p {
+            text-align: left;
+          }
+          .timeline-nodes:nth-child(even) {
+            flex-direction: row;
+          }
+          .timeline::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            border-left: 8px solid white;
+            height: 100%;
+            z-index: 1;
+            transform: translateX(-50%);
+          }
 
+          .timeline h3 {
+            font-size: 1.7rem;
+          }
+          .timeline p {
+            font-size: 14px;
+          }
+          .timeline-image {
+            position: absolute;
+            left: -9%;
+            width: 120px;
+            height: 120px;
+            //top: 60px;
+            /*transform: translateX(-50%;);*/
+          }
+          .timeline-nodes:nth-child(odd) .timeline-content::after {
+            content: "";
+            position: absolute;
+            top: 45%;
+            left: auto;
+            right: 100%;
+            width: 0;
+            border-left: 0;
+            border-right: 10px solid var(--blue);
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+          }
+          .timeline-nodes:nth-child(even) .timeline-content::after {
+            content: "";
+            position: absolute;
+            top: 45%;
+            right: 100%;
+            width: 0;
+            border-right: 10px solid var(--blue);
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+          }
+          .timeline-date {
+            display: none;
+          }
+          .timeline-nodes:nth-child(even) .timeline-date {
+            text-align: left;
+          }
+          .timeline-image::before {
+            width: 65px;
+            height: 65px;
+          }
+        }
         /*extra small device style */
         @media (max-width: 575px) {
           .timeline {
@@ -310,9 +368,14 @@
             position: absolute;
             left: -1%;
           }
-          .timeline-image::before {
-            width: 60px;
-            height: 60px;
+          .timeline::before {
+            display: none;
+          }
+          .timeline-nodes:nth-child(odd) .timeline-content::after {
+           display: none;
+          }
+          .timeline-nodes:nth-child(even) .timeline-content::after {
+            display: none;
           }
         }
       }

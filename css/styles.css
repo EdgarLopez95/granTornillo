@@ -372,7 +372,7 @@ footer .contenedor .derecha a {
 :root {
   --white: #ffffff;
   --black: #000000;
-  --blue: #0288d1;
+  --blue: #fab800;
   --gray: #ebebeb;
   --box-shadow1: 0px 0px 18px 2px rgba(10, 55, 90, 0.15);
 }
@@ -495,7 +495,8 @@ footer .contenedor .derecha a {
 }
 .mainIndex .seccionCuatroNosotros .container .historia .timeline h3,
 .mainIndex .seccionCuatroNosotros .container .historia .timeline p {
-  padding: 5px 15px;
+  padding: 2px;
+  margin: 0;
 }
 .mainIndex .seccionCuatroNosotros .container .historia .timeline h3 {
   font-weight: lighter;
@@ -503,7 +504,7 @@ footer .contenedor .derecha a {
 }
 .mainIndex .seccionCuatroNosotros .container .historia .timeline p,
 .mainIndex .seccionCuatroNosotros .container .historia .timeline time {
-  color: var(--blue);
+  color: white;
 }
 .mainIndex .seccionCuatroNosotros .container .historia .timeline::before {
   content: "";
@@ -512,16 +513,17 @@ footer .contenedor .derecha a {
   top: 0;
   left: 50%;
   width: 0;
-  border-left: 2px dashed var(--blue);
+  border-left: 8px solid white;
   height: 100%;
   z-index: 1;
   transform: translateX(-50%);
 }
 .mainIndex .seccionCuatroNosotros .container .historia .timeline-content {
-  border: 1px solid var(--blue);
+  border: 1px solid rgba(255, 255, 255, 0.308);
   position: relative;
-  border-radius: 0 0 10px 10px;
+  border-radius: 10px 10px 10px 10px;
   box-shadow: 0px 3px 25px 0px rgba(10, 55, 90, 0.2);
+  background-color: rgba(0, 66, 88, 0.3490196078);
 }
 .mainIndex .seccionCuatroNosotros .container .historia .timeline-nodes:nth-child(odd) .imagenn,
 .mainIndex .seccionCuatroNosotros .container .historia .timeline-nodes:nth-child(odd) p {
@@ -530,21 +532,19 @@ footer .contenedor .derecha a {
   margin-right: 0;
   display: block;
 }
+.mainIndex .seccionCuatroNosotros .container .historia .cuadrito {
+  display: flex;
+  align-items: center;
+}
 .mainIndex .seccionCuatroNosotros .container .historia .imagenn {
   max-width: 40%;
-  top: 0;
   padding: 10px 0;
   height: auto;
 }
 .mainIndex .seccionCuatroNosotros .container .historia .texto-derecha {
-  position: absolute;
-  top: 0;
-  left: 0;
   padding-left: 10px; /* Espacio entre la imagen y el texto (ajustable) */
   max-width: 60%; /* Ancho máximo que ocupará el texto (ajustable) */
-  box-sizing: border-box; /* Incluye el padding en el ancho total */
-  top: 50%; /* Coloca la parte superior del texto en el centro vertical */
-  transform: translateY(-50%);
+  margin-bottom: 0;
 }
 .mainIndex .seccionCuatroNosotros .container .historia .texto-derecha-b {
   position: absolute;
@@ -565,44 +565,97 @@ footer .contenedor .derecha a {
 .mainIndex .seccionCuatroNosotros .container .historia .timeline-nodes:nth-child(odd) .timeline-content::after {
   content: "";
   position: absolute;
-  top: 5%;
+  top: 37%;
   left: 100%;
   width: 0;
-  border-left: 10px solid var(--blue);
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fab800;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
 }
 .mainIndex .seccionCuatroNosotros .container .historia .timeline-nodes:nth-child(even) .timeline-content::after {
   content: "";
   position: absolute;
-  top: 5%;
+  top: 37%;
   right: 100%;
   width: 0;
-  border-right: 10px solid var(--blue);
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
+  border-right: 15px solid #fab800;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
 }
 .mainIndex .seccionCuatroNosotros .container .historia .timeline-image {
   position: relative;
   z-index: 100;
-}
-.mainIndex .seccionCuatroNosotros .container .historia .timeline-image::before {
-  content: "";
-  width: 80px;
-  height: 80px;
-  border: 2px dashed var(--blue);
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin-top: 30px;
 }
 .mainIndex .seccionCuatroNosotros .container .historia .timeline-image img {
   position: relative;
   z-index: 100;
+}
+@media (max-width: 1000px) {
+  .mainIndex .seccionCuatroNosotros .container .historia .timeline-nodes:nth-child(odd) h3,
+  .mainIndex .seccionCuatroNosotros .container .historia .timeline-nodes:nth-child(odd) p {
+    text-align: left;
+  }
+  .mainIndex .seccionCuatroNosotros .container .historia .timeline-nodes:nth-child(even) {
+    flex-direction: row;
+  }
+  .mainIndex .seccionCuatroNosotros .container .historia .timeline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    border-left: 8px solid white;
+    height: 100%;
+    z-index: 1;
+    transform: translateX(-50%);
+  }
+  .mainIndex .seccionCuatroNosotros .container .historia .timeline h3 {
+    font-size: 1.7rem;
+  }
+  .mainIndex .seccionCuatroNosotros .container .historia .timeline p {
+    font-size: 14px;
+  }
+  .mainIndex .seccionCuatroNosotros .container .historia .timeline-image {
+    position: absolute;
+    left: -10%;
+    /*transform: translateX(-50%;);*/
+  }
+  .mainIndex .seccionCuatroNosotros .container .historia .timeline-nodes:nth-child(odd) .timeline-content::after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: auto;
+    right: 100%;
+    width: 0;
+    border-left: 0;
+    border-right: 10px solid var(--blue);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+  .mainIndex .seccionCuatroNosotros .container .historia .timeline-nodes:nth-child(even) .timeline-content::after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: 100%;
+    width: 0;
+    border-right: 10px solid var(--blue);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+  .mainIndex .seccionCuatroNosotros .container .historia .timeline-date {
+    display: none;
+  }
+  .mainIndex .seccionCuatroNosotros .container .historia .timeline-nodes:nth-child(even) .timeline-date {
+    text-align: left;
+  }
+  .mainIndex .seccionCuatroNosotros .container .historia .timeline-image::before {
+    width: 65px;
+    height: 65px;
+  }
 }
 @media (max-width: 767px) {
   .mainIndex .seccionCuatroNosotros .container .historia .timeline-nodes:nth-child(odd) h3,
@@ -617,9 +670,9 @@ footer .contenedor .derecha a {
     display: block;
     position: absolute;
     top: 0;
-    left: 4%;
+    left: 0;
     width: 0;
-    border-left: 2px dashed var(--blue);
+    border-left: 8px solid white;
     height: 100%;
     z-index: 1;
     transform: translateX(-50%);
@@ -632,14 +685,15 @@ footer .contenedor .derecha a {
   }
   .mainIndex .seccionCuatroNosotros .container .historia .timeline-image {
     position: absolute;
-    left: 0%;
-    top: 60px;
+    left: -9%;
+    width: 120px;
+    height: 120px;
     /*transform: translateX(-50%;);*/
   }
   .mainIndex .seccionCuatroNosotros .container .historia .timeline-nodes:nth-child(odd) .timeline-content::after {
     content: "";
     position: absolute;
-    top: 5%;
+    top: 45%;
     left: auto;
     right: 100%;
     width: 0;
@@ -651,12 +705,15 @@ footer .contenedor .derecha a {
   .mainIndex .seccionCuatroNosotros .container .historia .timeline-nodes:nth-child(even) .timeline-content::after {
     content: "";
     position: absolute;
-    top: 5%;
+    top: 45%;
     right: 100%;
     width: 0;
     border-right: 10px solid var(--blue);
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
+  }
+  .mainIndex .seccionCuatroNosotros .container .historia .timeline-date {
+    display: none;
   }
   .mainIndex .seccionCuatroNosotros .container .historia .timeline-nodes:nth-child(even) .timeline-date {
     text-align: left;
@@ -675,9 +732,14 @@ footer .contenedor .derecha a {
     position: absolute;
     left: -1%;
   }
-  .mainIndex .seccionCuatroNosotros .container .historia .timeline-image::before {
-    width: 60px;
-    height: 60px;
+  .mainIndex .seccionCuatroNosotros .container .historia .timeline::before {
+    display: none;
+  }
+  .mainIndex .seccionCuatroNosotros .container .historia .timeline-nodes:nth-child(odd) .timeline-content::after {
+    display: none;
+  }
+  .mainIndex .seccionCuatroNosotros .container .historia .timeline-nodes:nth-child(even) .timeline-content::after {
+    display: none;
   }
 }
 .mainIndex .seccionCuatroNosotros .container .informacion_cuadro {
@@ -1311,9 +1373,6 @@ footer .contenedor .derecha a {
   .mainIndex .seccionCuatroNosotros .container {
     padding: 30px 10px;
   }
-  .mainIndex .seccionCuatroNosotros .container .informacion_cuadro {
-    margin-bottom: -20%;
-  }
 }
 @media screen and (max-width: 1000px) {
   .mainIndex .seccionUnoNosotros {
@@ -1348,9 +1407,6 @@ footer .contenedor .derecha a {
   .mainIndex .seccionCuatroNosotros {
     padding-top: 120px;
     margin-bottom: 120px;
-  }
-  .mainIndex .seccionCuatroNosotros .container .informacion_cuadro {
-    margin-bottom: -30%;
   }
   .mainIndex .seccionCincoNosotros {
     padding: 30px 10px;
