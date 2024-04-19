@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180.45 180.45">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fab800;
+      }
+
+      .cls-2 {
+        fill: #22384b;
+        font-family: Montserrat-Bold, Montserrat;
+        font-size: 39.22px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g>
+      <path class="cls-1" d="m180.45,90.22c0,49.83-40.4,90.22-90.22,90.22S0,140.05,0,90.22,40.39,0,90.22,0s90.22,40.4,90.22,90.22"/>
+      <text class="cls-2" transform="translate(50.07 106.99)"><tspan x="0" y="0">1977</tspan></text>
+    </g>
+  </g>
+</svg>

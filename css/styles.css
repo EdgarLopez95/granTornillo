@@ -404,6 +404,7 @@ footer .contenedor .derecha a {
   width: 100%;
 }
 .mainIndex .seccionUnoNosotros .contenedor .derecha p {
+  text-align: justify;
   color: #707070;
   -webkit-hyphens: none;
           hyphens: none;
@@ -438,6 +439,7 @@ footer .contenedor .derecha a {
   -webkit-hyphens: none;
           hyphens: none;
   color: #707070;
+  text-align: justify;
 }
 .mainIndex .seccionDosNosotros .contenedor .izquierda .texto p .bold {
   font-weight: bolder;
@@ -481,7 +483,6 @@ footer .contenedor .derecha a {
   margin-bottom: 100px;
 }
 .mainIndex .seccionCuatroNosotros .container .historia .timeline {
-  display: none;
   padding: 50px 0;
   position: relative;
 }
@@ -798,6 +799,7 @@ footer .contenedor .derecha a {
   -webkit-hyphens: none;
           hyphens: none;
   color: #707070;
+  text-align: justify;
 }
 
 .mainIndex .secionUnoProductos {
@@ -1153,6 +1155,7 @@ footer .contenedor .derecha a {
   color: white;
   -webkit-hyphens: none;
           hyphens: none;
+  text-align: justify;
 }
 .mainIndex .seccionTrees .seccionOne_div-derecho .contenedor_interno .card-group {
   padding-bottom: 20px;

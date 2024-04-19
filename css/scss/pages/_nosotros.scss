@@ -30,6 +30,7 @@
       .derecha {
         width: 100%;
         p {
+          text-align: justify;
           color: $colorParagraphs;
           hyphens: none;
         }
@@ -63,6 +64,7 @@
           p {
             hyphens: none;
             color: $colorParagraphs;
+            text-align: justify;
             .bold {
               font-weight: bolder;
               color: $colorDarkBlue;
@@ -104,9 +106,9 @@
           color: #fab800;
           margin-bottom: 100px;
         }
-  
+
         .timeline {
-          display: none;
+          //display: none;
           padding: 50px 0;
           position: relative;
         }
@@ -300,8 +302,8 @@
 
         /*extra small device style */
         @media (max-width: 575px) {
-          .timeline{
-            padding:20px ;
+          .timeline {
+            padding: 20px;
           }
           .timeline-image {
             display: none;
@@ -444,6 +446,7 @@
             .card-text {
               hyphens: none;
               color: $colorParagraphs;
+              text-align: justify;
             }
           }
         }
