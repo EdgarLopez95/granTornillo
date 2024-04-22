@@ -502,7 +502,7 @@ footer .contenedor .derecha a {
 }
 .mainIndex .seccionCuatroNosotros .container .historia .timeline h3 {
   font-weight: lighter;
-  background: var(--blue);
+  color: #fab800;
 }
 .mainIndex .seccionCuatroNosotros .container .historia .timeline p,
 .mainIndex .seccionCuatroNosotros .container .historia .timeline time {
@@ -535,6 +535,7 @@ footer .contenedor .derecha a {
   display: block;
 }
 .mainIndex .seccionCuatroNosotros .container .historia .cuadrito {
+  margin: 10px 0;
   display: flex;
   align-items: center;
 }
@@ -547,6 +548,14 @@ footer .contenedor .derecha a {
   padding-left: 10px; /* Espacio entre la imagen y el texto (ajustable) */
   max-width: 60%; /* Ancho máximo que ocupará el texto (ajustable) */
   margin-bottom: 0;
+}
+.mainIndex .seccionCuatroNosotros .container .historia .texto-derecha h3 {
+  text-align: end;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.mainIndex .seccionCuatroNosotros .container .historia .texto-derecha .otro-texto {
+  text-align: start;
 }
 .mainIndex .seccionCuatroNosotros .container .historia .texto-derecha-b {
   position: absolute;
