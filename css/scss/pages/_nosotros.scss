@@ -150,37 +150,38 @@
         .timeline-content {
           border: 1px solid rgba(255, 255, 255, 0.308);
           position: relative;
-          border-radius: 10px 10px 10px 10px;
+          border-radius: 15px 15px 15px 15px;
           box-shadow: 0px 3px 25px 0px rgba(10, 55, 90, 0.2);
           background-color: #00425859;
+          padding-left: 0px;
+          padding-right: 0px;
         }
         .timeline-nodes:nth-child(odd) .imagenn,
         .timeline-nodes:nth-child(odd) p {
           text-align: right;
-          margin-left: auto;
+          //margin-left: auto;
           margin-right: 0;
           display: block;
         }
         .cuadrito {
-          margin: 10px 0;
+          
           display: flex;
           align-items: center;
         }
         .imagenn {
           max-width: 40%;
-          padding: 10px 0;
+          padding: 10px 10px;
           height: auto;
         }
         .texto-derecha {
-          padding-left: 10px; /* Espacio entre la imagen y el texto (ajustable) */
-          max-width: 60%; /* Ancho máximo que ocupará el texto (ajustable) */
-          margin-bottom: 0;
-          h3{
+          padding: 0 25px;
+          // max-width: 60%;
+          h3 {
             text-align: end;
             font-weight: bolder;
             font-size: 20px;
           }
-          .otro-texto{
+          .otro-texto {
             text-align: start;
           }
         }
@@ -374,6 +375,9 @@
           .timeline {
             padding: 1px;
           }
+          .cuadrito{
+            margin: 10px 0;
+          }
           .timeline-image {
             display: none;
             position: absolute;
@@ -383,7 +387,7 @@
             display: none;
           }
           .timeline-nodes:nth-child(odd) .timeline-content::after {
-           display: none;
+            display: none;
           }
           .timeline-nodes:nth-child(even) .timeline-content::after {
             display: none;
