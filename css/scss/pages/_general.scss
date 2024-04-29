@@ -1,5 +1,5 @@
-.bold{
- font-weight: bolder;
+.bold {
+  font-weight: bolder;
 }
 body {
   .boton-wap {
@@ -164,8 +164,8 @@ body {
 
 footer {
   background-color: $colorDarkBlue;
-  padding: 0 20px;
-  padding-bottom: 30px;
+  // padding: 0 20px;
+  //padding-bottom: 30px;
   .contenedor {
     padding-top: 40px;
     margin: 0 auto;
@@ -208,6 +208,27 @@ footer {
         font-size: 16px;
         font-weight: normal;
         margin-bottom: 13px;
+      }
+    }
+  }
+  .datos {
+    .col {
+      height: 50px;
+      background-color: #0808084f;
+      display: flex;
+      justify-content: center; /* Centra horizontalmente */
+      align-items: center; /* Centra verticalmente */
+      h3 {
+        font-size: 14px;
+        text-align: center;
+        color: white;
+        a {
+          display: inline;
+          text-decoration: underline;
+          &:hover{
+            color: $colorYellow;
+          }
+        }
       }
     }
   }

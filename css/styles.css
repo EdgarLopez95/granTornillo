@@ -330,8 +330,6 @@ body .boton-wap:hover {
 
 footer {
   background-color: #20384a;
-  padding: 0 20px;
-  padding-bottom: 30px;
 }
 footer .contenedor {
   padding-top: 40px;
@@ -371,6 +369,25 @@ footer .contenedor .derecha a {
   font-size: 16px;
   font-weight: normal;
   margin-bottom: 13px;
+}
+footer .datos .col {
+  height: 50px;
+  background-color: rgba(8, 8, 8, 0.3098039216);
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+footer .datos .col h3 {
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
+footer .datos .col h3 a {
+  display: inline;
+  text-decoration: underline;
+}
+footer .datos .col h3 a:hover {
+  color: #fab800;
 }
 
 :root {
